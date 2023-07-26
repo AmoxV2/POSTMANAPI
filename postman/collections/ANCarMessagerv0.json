@@ -10,6 +10,11 @@
 			"name": "notes",
 			"item": [
 				{
+					"name": "działa?",
+					"item": [],
+					"id": "d718ddf4-0995-4d55-806f-4476ce7d7f87"
+				},
+				{
 					"name": "Create note",
 					"id": "17ff5f0a-5ce7-4cc7-8c1a-3e95a215473e",
 					"protocolProfileBehavior": {
@@ -157,7 +162,6 @@
 							],
 							"variable": [
 								{
-									"id": "9519e923-51fb-4a17-91d0-2eec35ef5caf",
 									"key": "noteId",
 									"value": null,
 									"description": "ID of the note"
@@ -184,7 +188,6 @@
 									],
 									"variable": [
 										{
-											"id": "9519e923-51fb-4a17-91d0-2eec35ef5caf",
 											"key": "noteId",
 											"value": null,
 											"description": "ID of the note"
@@ -239,7 +242,6 @@
 							],
 							"variable": [
 								{
-									"id": "a349ba69-d493-4e5d-93be-3271ae463f50",
 									"key": "noteId",
 									"value": null,
 									"description": "ID of the note"
@@ -275,7 +277,6 @@
 									],
 									"variable": [
 										{
-											"id": "a349ba69-d493-4e5d-93be-3271ae463f50",
 											"key": "noteId",
 											"value": null,
 											"description": "ID of the note"
@@ -321,7 +322,6 @@
 							],
 							"variable": [
 								{
-									"id": "64f2d852-19ba-4fbc-a1ea-6f4d546be19c",
 									"key": "noteId",
 									"value": null,
 									"description": "ID of the note"
@@ -348,7 +348,6 @@
 									],
 									"variable": [
 										{
-											"id": "64f2d852-19ba-4fbc-a1ea-6f4d546be19c",
 											"key": "noteId",
 											"value": null,
 											"description": "ID of the note"
@@ -1470,7 +1469,6 @@
 									],
 									"variable": [
 										{
-											"id": "8ca22208-3bf6-4d45-a210-9e2374df954a",
 											"key": "userId",
 											"value": "2"
 										}
@@ -1506,7 +1504,6 @@
 											],
 											"variable": [
 												{
-													"id": "8ca22208-3bf6-4d45-a210-9e2374df954a",
 													"key": "userId",
 													"value": "2"
 												}
@@ -1593,7 +1590,6 @@
 									],
 									"variable": [
 										{
-											"id": "453e741d-c903-443f-9d9f-7a91d7287fb4",
 											"key": "userId",
 											"value": "2"
 										}
@@ -1619,7 +1615,6 @@
 											],
 											"variable": [
 												{
-													"id": "453e741d-c903-443f-9d9f-7a91d7287fb4",
 													"key": "userId",
 													"value": "2"
 												}
@@ -1728,7 +1723,9 @@
 														{
 															"key": "image",
 															"type": "file",
-															"src": "rTyLrmzLJ/beautiful-scenery.jpg"
+															"src": [
+																"rTyLrmzLJ/beautiful-scenery.jpg"
+															]
 														}
 													]
 												},
@@ -2732,7 +2729,9 @@
 														{
 															"key": "image",
 															"type": "file",
-															"src": "Msk2wptcA/beautiful-scenery.jpg"
+															"src": [
+																"Msk2wptcA/beautiful-scenery.jpg"
+															]
 														}
 													]
 												},
@@ -2942,7 +2941,9 @@
 														{
 															"key": "image",
 															"type": "file",
-															"src": "bOhn050sr/beautiful-scenery.jpg"
+															"src": [
+																"bOhn050sr/beautiful-scenery.jpg"
+															]
 														}
 													]
 												},
@@ -3118,7 +3119,6 @@
 							],
 							"variable": [
 								{
-									"id": "7a1a5b9a-a7f2-4fa2-a802-da4a43271a2e",
 									"key": "Id",
 									"value": null
 								}
@@ -3144,7 +3144,6 @@
 									],
 									"variable": [
 										{
-											"id": "7a1a5b9a-a7f2-4fa2-a802-da4a43271a2e",
 											"key": "Id",
 											"value": null
 										}
@@ -3271,7 +3270,6 @@
 							],
 							"variable": [
 								{
-									"id": "951495ab-1094-4acc-9bfc-356ed2ee7df9",
 									"key": "Id",
 									"value": null
 								}
@@ -3306,7 +3304,6 @@
 									],
 									"variable": [
 										{
-											"id": "951495ab-1094-4acc-9bfc-356ed2ee7df9",
 											"key": "Id",
 											"value": null
 										}
@@ -3351,7 +3348,6 @@
 							],
 							"variable": [
 								{
-									"id": "e12b0e56-2e62-4d9c-87b1-9860c4964fc0",
 									"key": "Id",
 									"value": null
 								}
@@ -3377,7 +3373,6 @@
 									],
 									"variable": [
 										{
-											"id": "e12b0e56-2e62-4d9c-87b1-9860c4964fc0",
 											"key": "Id",
 											"value": null
 										}
@@ -3626,7 +3621,6 @@
 							],
 							"variable": [
 								{
-									"id": "fccccfa4-a80a-4fc8-a135-d96ac688173c",
 									"key": "articleId",
 									"value": null,
 									"description": "The unique identifier of the article to retrieve related news for."
@@ -3654,7 +3648,6 @@
 									],
 									"variable": [
 										{
-											"id": "fccccfa4-a80a-4fc8-a135-d96ac688173c",
 											"key": "articleId",
 											"value": null,
 											"description": "The unique identifier of the article to retrieve related news for."
@@ -4035,7 +4028,6 @@
 							],
 							"variable": [
 								{
-									"id": "235b6c8f-3b41-4021-a9c7-c28222972155",
 									"key": "shoeId",
 									"value": null,
 									"description": "The ID of the shoes"
@@ -4063,7 +4055,6 @@
 									],
 									"variable": [
 										{
-											"id": "235b6c8f-3b41-4021-a9c7-c28222972155",
 											"key": "shoeId",
 											"value": null,
 											"description": "The ID of the shoes"
