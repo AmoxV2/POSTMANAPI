@@ -10,11 +10,6 @@
 			"name": "notes",
 			"item": [
 				{
-					"name": "działa?",
-					"item": [],
-					"id": "d718ddf4-0995-4d55-806f-4476ce7d7f87"
-				},
-				{
 					"name": "Create note",
 					"id": "17ff5f0a-5ce7-4cc7-8c1a-3e95a215473e",
 					"protocolProfileBehavior": {
@@ -25,7 +20,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"title\": \"New Note\",\n  \"content\": \"This is a new note.\"\n}\n",
+							"raw": "{\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\",\n    \"starsRating\": 5\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -46,13 +41,13 @@
 					"response": [
 						{
 							"id": "ca3889de-e18e-4422-9e0f-205be9ba1f63",
-							"name": "Create note",
+							"name": "200",
 							"originalRequest": {
 								"method": "POST",
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"title\": \"New Note\",\n  \"content\": \"This is a new note.\"\n}\n",
+									"raw": "{\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\",\n    \"starsRating\": 5\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -70,8 +65,8 @@
 								},
 								"description": "Create a new note."
 							},
-							"status": "Created",
-							"code": 201,
+							"status": "OK",
+							"code": 200,
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
@@ -83,12 +78,213 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"id\": \"note3\",\n  \"title\": \"New Note\",\n  \"content\": \"This is a new note.\",\n  \"createdAt\": \"2023-05-18T16:20:00Z\",\n  \"updatedAt\": \"2023-05-18T16:20:00Z\"\n}\n"
+							"body": "{\n    \"id\": \"1\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\",\n    \"starsRating\": 5,\n    \"createdAt\": \"2023-05-18T16:20:00Z\",\n    \"updatedAt\": \"2023-05-18T16:20:00Z\"\n}"
+						},
+						{
+							"id": "6dac234f-d66f-420f-8982-0ee4463309cb",
+							"name": "400",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\",\n    \"starsRating\": 5\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/notes",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"notes"
+									]
+								},
+								"description": "Create a new note."
+							},
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+						},
+						{
+							"id": "f070f9cc-7489-44e9-b994-c7872a4a2edb",
+							"name": "401",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\",\n    \"starsRating\": 5\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/notes",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"notes"
+									]
+								},
+								"description": "Create a new note."
+							},
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+						},
+						{
+							"id": "486e69f8-519d-410e-aee9-8701948eefce",
+							"name": "403",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\",\n    \"starsRating\": 5\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/notes",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"notes"
+									]
+								},
+								"description": "Create a new note."
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+						},
+						{
+							"id": "69294634-237b-4fdd-a3f9-50dbf11972f4",
+							"name": "404",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\",\n    \"starsRating\": 5\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/notes",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"notes"
+									]
+								},
+								"description": "Create a new note."
+							},
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+						},
+						{
+							"id": "e5f5bc7b-38c0-4219-b6d1-aef7b259264e",
+							"name": "500",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\",\n    \"starsRating\": 5\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/notes",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"notes"
+									]
+								},
+								"description": "Create a new note."
+							},
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
 						}
 					]
 				},
 				{
-					"name": "Get all notes",
+					"name": "Get all vechicle notes",
 					"id": "9c5c981e-0e3d-4977-a056-0cfacb45c4b7",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -96,6 +292,15 @@
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"registrationNumber\": \"ABC1234\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
 							"raw": "{{base_url}}/notes",
 							"host": [
@@ -110,10 +315,26 @@
 					"response": [
 						{
 							"id": "542b4066-0d39-4816-8910-e536f7bb6afd",
-							"name": "Get all notes",
+							"name": "200",
 							"originalRequest": {
 								"method": "GET",
-								"header": [],
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"registrationNumber\": \"ABC1234\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
 								"url": {
 									"raw": "{{base_url}}/notes",
 									"host": [
@@ -138,7 +359,243 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"notes\": [\n    {\n      \"id\": \"note1\",\n      \"title\": \"Meeting Notes\",\n      \"content\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\",\n      \"createdAt\": \"2023-05-18T10:30:00Z\",\n      \"updatedAt\": \"2023-05-18T14:45:00Z\"\n    },\n    {\n      \"id\": \"note2\",\n      \"title\": \"Project Ideas\",\n      \"content\": \"Nulla facilisi. Duis aliquam mi sed diam varius scelerisque.\",\n      \"createdAt\": \"2023-05-17T15:20:00Z\",\n      \"updatedAt\": \"2023-05-18T09:10:00Z\"\n    }\n  ]\n}\n"
+							"body": "{\n  \"notes\": [\n    {\n    \"id\": \"1\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\",\n    \"starsRating\": 5,\n    \"userName\": \"cichyDzik\",\n    \"userId\": 3,\n    \"createdAt\": \"2023-05-18T16:20:00Z\",\n    \"updatedAt\": \"2023-05-18T16:20:00Z\"\n},\n   {\n    \"id\": \"3\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"The driver didn't stop at green arrow\",\n    \"starsRating\": 3,\n    \"userName\": \"głośnyDzik\",\n    \"userId\": 35,\n    \"createdAt\": \"2023-05-18T16:20:00Z\",\n    \"updatedAt\": \"2023-05-18T16:20:00Z\"\n}\n  ]\n}\n"
+						},
+						{
+							"id": "96553b4e-0e3b-4a23-b27c-b2af9f73a538",
+							"name": "400",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"registrationNumber\": \"ABC1234\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/notes",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"notes"
+									]
+								},
+								"description": "Retrieve all notes."
+							},
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+						},
+						{
+							"id": "fc754b10-10e2-4b39-abfc-a1677cc5f7ba",
+							"name": "401",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"registrationNumber\": \"ABC1234\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/notes",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"notes"
+									]
+								},
+								"description": "Retrieve all notes."
+							},
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+						},
+						{
+							"id": "220d8ed6-b568-4fe2-a81e-d13135de9f69",
+							"name": "403",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"registrationNumber\": \"ABC1234\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/notes",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"notes"
+									]
+								},
+								"description": "Retrieve all notes."
+							},
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+						},
+						{
+							"id": "53780357-6554-4e3a-a2b1-8aa3833fafdb",
+							"name": "404",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"registrationNumber\": \"ABC1234\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/notes",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"notes"
+									]
+								},
+								"description": "Retrieve all notes."
+							},
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+						},
+						{
+							"id": "d26f9336-7548-4e61-b0a0-79d17daec501",
+							"name": "500",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"registrationNumber\": \"ABC1234\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/notes",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"notes"
+									]
+								},
+								"description": "Retrieve all notes."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
 						}
 					]
 				},
@@ -152,19 +609,18 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/notes/:noteId",
+							"raw": "{{base_url}}/notes/:id",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
 								"notes",
-								":noteId"
+								":id"
 							],
 							"variable": [
 								{
-									"key": "noteId",
-									"value": null,
-									"description": "ID of the note"
+									"key": "id",
+									"value": null
 								}
 							]
 						},
@@ -173,24 +629,23 @@
 					"response": [
 						{
 							"id": "146e4e07-a624-4e62-a6a6-04f8b12d8733",
-							"name": "Get note details",
+							"name": "200",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/notes/:noteId",
+									"raw": "{{base_url}}/notes/:id",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
 										"notes",
-										":noteId"
+										":id"
 									],
 									"variable": [
 										{
-											"key": "noteId",
-											"value": null,
-											"description": "ID of the note"
+											"key": "id",
+											"value": "1"
 										}
 									]
 								},
@@ -209,7 +664,197 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"id\": \"note1\",\n  \"title\": \"Meeting Notes\",\n  \"content\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\",\n  \"createdAt\": \"2023-05-18T10:30:00Z\",\n  \"updatedAt\": \"2023-05-18T14:45:00Z\"\n}\n"
+							"body": "{\n    \"id\": \"1\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\",\n    \"starsRating\": 5,\n    \"userName\": \"cichyDzik\",\n    \"userId\": 3,\n    \"createdAt\": \"2023-05-18T16:20:00Z\",\n    \"updatedAt\": \"2023-05-18T16:20:00Z\"\n}"
+						},
+						{
+							"id": "3ed9f454-5501-4933-90c5-26ac5dfdb3fa",
+							"name": "400",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/notes/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"notes",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								},
+								"description": "Retrieve the details of a specific note by providing the note ID."
+							},
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+						},
+						{
+							"id": "d9663fce-051f-42d3-a079-5f6c39338ad0",
+							"name": "401",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/notes/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"notes",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								},
+								"description": "Retrieve the details of a specific note by providing the note ID."
+							},
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+						},
+						{
+							"id": "4439f5df-fe85-4ff9-9241-8700faf86daf",
+							"name": "403",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/notes/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"notes",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								},
+								"description": "Retrieve the details of a specific note by providing the note ID."
+							},
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+						},
+						{
+							"id": "05ab7400-ce1b-4b27-8b6b-9396214b7c44",
+							"name": "404",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/notes/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"notes",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								},
+								"description": "Retrieve the details of a specific note by providing the note ID."
+							},
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+						},
+						{
+							"id": "2da1c992-7ed4-4e64-bd9a-076ff3d9e0a9",
+							"name": "500",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/notes/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"notes",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								},
+								"description": "Retrieve the details of a specific note by providing the note ID."
+							},
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
 						}
 					]
 				},
@@ -224,7 +869,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"title\": \"Updated Note\",\n  \"content\": \"This is an updated note.\"\n}\n",
+							"raw": "{\n    \"text\": \"updated opinion\",\n    \"starRating\": 3\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -232,19 +877,18 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/notes/:noteId",
+							"raw": "{{base_url}}/notes/:id",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
 								"notes",
-								":noteId"
+								":id"
 							],
 							"variable": [
 								{
-									"key": "noteId",
-									"value": null,
-									"description": "ID of the note"
+									"key": "id",
+									"value": null
 								}
 							]
 						},
@@ -253,13 +897,13 @@
 					"response": [
 						{
 							"id": "144cc707-9020-44ff-b16a-c35a2cbd3b96",
-							"name": "Update note",
+							"name": "200",
 							"originalRequest": {
 								"method": "PUT",
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"title\": \"Updated Note\",\n  \"content\": \"This is an updated note.\"\n}\n",
+									"raw": "{\n    \"text\": \"updated opinion\",\n    \"starRating\": 3\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -267,19 +911,18 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/notes/:noteId",
+									"raw": "{{base_url}}/notes/:id",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
 										"notes",
-										":noteId"
+										":id"
 									],
 									"variable": [
 										{
-											"key": "noteId",
-											"value": null,
-											"description": "ID of the note"
+											"key": "id",
+											"value": "1"
 										}
 									]
 								},
@@ -298,7 +941,243 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"id\": \"note3\",\n  \"title\": \"Updated Note\",\n  \"content\": \"This is an updated note.\",\n  \"createdAt\": \"2023-05-18T16:20:00Z\",\n  \"updatedAt\": \"2023-05-18T17:30:00Z\"\n}\n"
+							"body": "{\n    \"id\": \"1\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"updated opinion\",\n    \"starsRating\": 3,\n    \"userName\": \"cichyDzik\",\n    \"userId\": 3,\n    \"createdAt\": \"2023-05-18T16:20:00Z\",\n    \"updatedAt\": \"2023-05-18T16:20:00Z\"\n}"
+						},
+						{
+							"id": "efe4201f-bd67-476e-8e92-52982c31d2eb",
+							"name": "400",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"text\": \"updated opinion\",\n    \"starRating\": 3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/notes/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"notes",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								},
+								"description": "Update the details of a specific note identified by its note ID."
+							},
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+						},
+						{
+							"id": "fde28c22-a4fb-4313-850d-d161aac7ae74",
+							"name": "401",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"text\": \"updated opinion\",\n    \"starRating\": 3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/notes/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"notes",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								},
+								"description": "Update the details of a specific note identified by its note ID."
+							},
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+						},
+						{
+							"id": "1fa714c7-6d2e-407f-a9d9-6496c5b80644",
+							"name": "403",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"text\": \"updated opinion\",\n    \"starRating\": 3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/notes/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"notes",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								},
+								"description": "Update the details of a specific note identified by its note ID."
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+						},
+						{
+							"id": "071287dd-16ee-461e-9e17-584735054840",
+							"name": "404",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"text\": \"updated opinion\",\n    \"starRating\": 3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/notes/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"notes",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								},
+								"description": "Update the details of a specific note identified by its note ID."
+							},
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+						},
+						{
+							"id": "4f614ec4-c9e9-46db-99c1-f4259c030b0d",
+							"name": "500",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"text\": \"updated opinion\",\n    \"starRating\": 3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/notes/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"notes",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								},
+								"description": "Update the details of a specific note identified by its note ID."
+							},
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
 						}
 					]
 				},
@@ -312,19 +1191,18 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/notes/:noteId",
+							"raw": "{{base_url}}/notes/:id",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
 								"notes",
-								":noteId"
+								":id"
 							],
 							"variable": [
 								{
-									"key": "noteId",
-									"value": null,
-									"description": "ID of the note"
+									"key": "id",
+									"value": "1"
 								}
 							]
 						},
@@ -332,44 +1210,217 @@
 					},
 					"response": [
 						{
-							"id": "ed2a2345-1109-44d4-8f74-b047940dd557",
-							"name": "Delete note",
+							"id": "dc71f64b-a5fd-4dbe-abe5-6e803eafe9ad",
+							"name": "200",
 							"originalRequest": {
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/notes/:noteId",
+									"raw": "{{base_url}}/notes/:id",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
 										"notes",
-										":noteId"
+										":id"
 									],
 									"variable": [
 										{
-											"key": "noteId",
-											"value": null,
-											"description": "ID of the note"
+											"key": "id",
+											"value": "1"
 										}
 									]
-								},
-								"description": "Delete a specific note identified by its note ID."
+								}
 							},
 							"status": "OK",
 							"code": 200,
+							"cookie": []
+						},
+						{
+							"id": "149f505b-3246-4432-929b-e3fab031a4b2",
+							"name": "400",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/notes/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"notes",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"code": 400,
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
 									"key": "Content-Type",
-									"value": "application/json",
 									"name": "Content-Type",
+									"value": "application/json",
 									"description": "",
 									"type": "text"
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"id\": \"note1\",\n    \"title\": \"Meeting Notes\",\n    \"content\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\",\n    \"createdAt\": \"2023-05-18T10:30:00Z\",\n    \"updatedAt\": \"2023-05-18T14:45:00Z\"\n}"
+							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+						},
+						{
+							"id": "61980832-2400-4b17-9bdb-2313697717e2",
+							"name": "401",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/notes/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"notes",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"name": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+						},
+						{
+							"id": "f3220c80-602a-4664-92ef-0d45bc9492dd",
+							"name": "403",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/notes/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"notes",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"name": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+						},
+						{
+							"id": "97387787-3f00-478b-93d9-80bd2864bbda",
+							"name": "404",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/notes/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"notes",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"name": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+						},
+						{
+							"id": "b476ef22-6373-40fd-a487-ab7bf67248fa",
+							"name": "500",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/notes/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"notes",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"name": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
 						}
 					]
 				}
@@ -488,11 +1539,11 @@
 										}
 									],
 									"cookie": [],
-									"body": "{\n    \"status\": true,\n    \"data\": {\n        \"user\": {\n            \"id\": 4,\n            \"username\": \"sandrawill\",\n            \"email\": \"sandrawilliam1996@example.com\",\n            \"age\": 20,\n            \"firstName\": \"Sandra\",\n            \"lastName\": \"William\",\n            \"password\": \"f4967bd8be423c9a60507c579ad58b051ac0fdca9e9d0cbcc6887bbbb24e05f5\",\n            \"role\": \"user\",\n            \"updatedAt\": \"2023-05-12T10:36:32.417Z\",\n            \"createdAt\": \"2023-05-12T10:36:32.417Z\"\n        },\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJuYW1lIjoic2FuZHJhd2lsbCIsImlhdCI6MTY4Mzg4Nzc5MiwiZXhwIjoxNjgzODkxMzkyfQ.1oWobYNftxayDssyHaP3E1wmRXLuGfRRXpuV6Oux-iU\"\n    }\n}"
+									"body": "{\n    \"status\": true,\n    \"data\": {\n        \"user\": {\n            \"id\": 4,\n            \"username\": \"sandrawill\",\n            \"email\": \"sandrawilliam1996@example.com\",\n            \"age\": 20,\n            \"firstName\": \"Sandra\",\n            \"lastName\": \"William\",\n            \"password\": \"f4967bd8be423c9a60507c579ad58b051ac0fdca9e9d0cbcc6887bbbb24e05f5\", \n            \"updatedAt\": \"2023-05-12T10:36:32.417Z\",\n            \"createdAt\": \"2023-05-12T10:36:32.417Z\"\n        },\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJuYW1lIjoic2FuZHJhd2lsbCIsImlhdCI6MTY4Mzg4Nzc5MiwiZXhwIjoxNjgzODkxMzkyfQ.1oWobYNftxayDssyHaP3E1wmRXLuGfRRXpuV6Oux-iU\"\n    }\n}"
 								},
 								{
-									"id": "422ff3e9-7b0b-461d-b642-78b40d8b002b",
-									"name": "Register",
+									"id": "80dc9920-afac-438e-8352-f580a81b9356",
+									"name": "400",
 									"originalRequest": {
 										"method": "POST",
 										"header": [],
@@ -516,13 +1567,13 @@
 										},
 										"description": "This request creates a new user.\n\n**Note:** If you want to add yourself as an admin, you can add a key named \"role\" and set the value \"admin\" as a part of the request body.\n\nThis request also has a test script that sets the authorization token received in the response in the `accessToken` collection variable. This helps you reuse the token in other requests easily."
 									},
-									"status": "OK",
-									"code": 200,
+									"status": "Request error",
+									"code": 400,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
 											"key": "Date",
-											"value": "Wed, 17 May 2023 12:38:14 GMT"
+											"value": "Fri, 12 May 2023 09:17:51 GMT"
 										},
 										{
 											"key": "Content-Type",
@@ -530,7 +1581,7 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "382"
+											"value": "387"
 										},
 										{
 											"key": "Connection",
@@ -542,11 +1593,242 @@
 										},
 										{
 											"key": "etag",
-											"value": "W/\"17e-vukrnygjchzdmmVyeM/fMaGFB7s\""
+											"value": "W/\"183-RVxQlq25E3PoKFU4OcTJY3duAfQ\""
 										}
 									],
 									"cookie": [],
-									"body": "{\n    \"status\": true,\n    \"data\": {\n        \"user\": {\n            \"username\": \"sandrawill\",\n            \"email\": \"sandrawilliam1996@example.com\",\n            \"age\": 20,\n            \"firstName\": \"Sandra\",\n            \"lastName\": \"William\",\n            \"password\": \"sandrawill\",\n            \"role\": \"admin\"\n        },\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiYXJ2aW5ka2FscmEtYWRtaW4iLCJpYXQiOjE2ODM3MTYyMzMsImV4cCI6MTY4MzcxOTgzM30.gbM_hx20Fz_xjSQFNAfluVJA5G_LDPYbTzl6e838V9M\"\n    }\n}"
+									"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+								},
+								{
+									"id": "13f5d1bf-5829-4517-9484-c137e576d3bf",
+									"name": "401",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"username\": \"sandrawill\",\n    \"email\": \"sandrawilliam1996@example.com\",\n    \"age\": 20,\n    \"firstName\": \"Sandra\",\n    \"lastName\": \"William\",\n    \"password\": \"sandrawill\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/signup",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"signup"
+											]
+										},
+										"description": "This request creates a new user.\n\n**Note:** If you want to add yourself as an admin, you can add a key named \"role\" and set the value \"admin\" as a part of the request body.\n\nThis request also has a test script that sets the authorization token received in the response in the `accessToken` collection variable. This helps you reuse the token in other requests easily."
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Fri, 12 May 2023 09:17:51 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "387"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "x-powered-by",
+											"value": "Express"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"183-RVxQlq25E3PoKFU4OcTJY3duAfQ\""
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+								},
+								{
+									"id": "1984ec65-7748-442b-8532-11b9ee96c996",
+									"name": "403",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"username\": \"sandrawill\",\n    \"email\": \"sandrawilliam1996@example.com\",\n    \"age\": 20,\n    \"firstName\": \"Sandra\",\n    \"lastName\": \"William\",\n    \"password\": \"sandrawill\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/signup",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"signup"
+											]
+										},
+										"description": "This request creates a new user.\n\n**Note:** If you want to add yourself as an admin, you can add a key named \"role\" and set the value \"admin\" as a part of the request body.\n\nThis request also has a test script that sets the authorization token received in the response in the `accessToken` collection variable. This helps you reuse the token in other requests easily."
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Fri, 12 May 2023 09:17:51 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "387"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "x-powered-by",
+											"value": "Express"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"183-RVxQlq25E3PoKFU4OcTJY3duAfQ\""
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+								},
+								{
+									"id": "0e7e74a9-4b9e-495b-b365-7c02dadd02cb",
+									"name": "404",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"username\": \"sandrawill\",\n    \"email\": \"sandrawilliam1996@example.com\",\n    \"age\": 20,\n    \"firstName\": \"Sandra\",\n    \"lastName\": \"William\",\n    \"password\": \"sandrawill\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/signup",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"signup"
+											]
+										},
+										"description": "This request creates a new user.\n\n**Note:** If you want to add yourself as an admin, you can add a key named \"role\" and set the value \"admin\" as a part of the request body.\n\nThis request also has a test script that sets the authorization token received in the response in the `accessToken` collection variable. This helps you reuse the token in other requests easily."
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Fri, 12 May 2023 09:17:51 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "387"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "x-powered-by",
+											"value": "Express"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"183-RVxQlq25E3PoKFU4OcTJY3duAfQ\""
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+								},
+								{
+									"id": "92af59cb-e3fd-4548-9959-925477025296",
+									"name": "500",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"username\": \"sandrawill\",\n    \"email\": \"sandrawilliam1996@example.com\",\n    \"age\": 20,\n    \"firstName\": \"Sandra\",\n    \"lastName\": \"William\",\n    \"password\": \"sandrawill\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/signup",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"signup"
+											]
+										},
+										"description": "This request creates a new user.\n\n**Note:** If you want to add yourself as an admin, you can add a key named \"role\" and set the value \"admin\" as a part of the request body.\n\nThis request also has a test script that sets the authorization token received in the response in the `accessToken` collection variable. This helps you reuse the token in other requests easily."
+									},
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Fri, 12 May 2023 09:17:51 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "387"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "x-powered-by",
+											"value": "Express"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"183-RVxQlq25E3PoKFU4OcTJY3duAfQ\""
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
 								}
 							]
 						},
@@ -656,11 +1938,11 @@
 										}
 									],
 									"cookie": [],
-									"body": "{\n    \"status\": true,\n    \"data\": {\n        \"user\": {\n            \"id\": 1,\n            \"username\": \"harry123\",\n            \"email\": \"harry.smith@example.com\",\n            \"password\": \"d4cfaf03600bf1a55ba4372ceb17ff9234576eb062c1f8b78bd3c53c703f194c\",\n            \"age\": 33,\n            \"role\": \"admin\",\n            \"firstName\": \"Harry\",\n            \"lastName\": \"Smith\",\n            \"createdAt\": \"2023-05-12T10:34:32.864Z\",\n            \"updatedAt\": \"2023-05-12T10:34:32.864Z\"\n        },\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiaGFycnkxMjMiLCJpYXQiOjE2ODM4ODc4MjcsImV4cCI6MTY4Mzg5MTQyN30.hLf55ZfzHcr4mwi8l7dpzJWuHYOZCdfZMDav9X_rfZE\"\n    }\n}"
+									"body": "{\n    \"status\": true,\n    \"data\": {\n        \"user\": {\n            \"id\": 1,\n            \"username\": \"harry123\",\n            \"email\": \"harry.smith@example.com\",\n            \"password\": \"d4cfaf03600bf1a55ba4372ceb17ff9234576eb062c1f8b78bd3c53c703f194c\",\n            \"age\": 33,\n            \"firstName\": \"Harry\",\n            \"lastName\": \"Smith\",\n            \"createdAt\": \"2023-05-12T10:34:32.864Z\",\n            \"updatedAt\": \"2023-05-12T10:34:32.864Z\"\n        },\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiaGFycnkxMjMiLCJpYXQiOjE2ODM4ODc4MjcsImV4cCI6MTY4Mzg5MTQyN30.hLf55ZfzHcr4mwi8l7dpzJWuHYOZCdfZMDav9X_rfZE\"\n    }\n}"
 								},
 								{
 									"id": "c08d5882-12f0-4864-9194-38a3fc2200a4",
-									"name": "400 (Invalid Username)",
+									"name": "400",
 									"originalRequest": {
 										"method": "POST",
 										"header": [],
@@ -722,11 +2004,11 @@
 										}
 									],
 									"cookie": [],
-									"body": "{\n    \"status\": false,\n    \"error\": {\n        \"message\": \"Could not find any user with username: `tommillera`.\"\n    }\n}"
+									"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
 								},
 								{
-									"id": "4ba188fe-ee92-43cc-8385-1794ba3b33a5",
-									"name": "400 (Password Mismatch)",
+									"id": "525f7df0-b292-4a41-a684-2184051ae503",
+									"name": "401",
 									"originalRequest": {
 										"method": "POST",
 										"header": [],
@@ -750,8 +2032,8 @@
 										},
 										"description": "This request lets users log in.\n\nIt has a test script that sets the authorization token received in the response in the `accessToken` collection variable. This helps you reuse the token in other requests easily."
 									},
-									"status": "Bad Request",
-									"code": 400,
+									"status": "Unauthorized",
+									"code": 401,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
@@ -768,15 +2050,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "84"
+											"value": "91"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"54-3kqI2Q6y1TsGMiUbKk3joz9GLYA\""
+											"value": "W/\"5b-OTdgSjzKonfqmY8iEqC0UNIzZ+w\""
 										},
 										{
 											"key": "Date",
-											"value": "Fri, 12 May 2023 10:40:20 GMT"
+											"value": "Fri, 12 May 2023 10:39:53 GMT"
 										},
 										{
 											"key": "Connection",
@@ -788,7 +2070,202 @@
 										}
 									],
 									"cookie": [],
-									"body": "{\n    \"status\": false,\n    \"error\": {\n        \"message\": \"Provided username and password did not match.\"\n    }\n}"
+									"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+								},
+								{
+									"id": "7c9e1f14-5255-4cea-b37c-19df587702b6",
+									"name": "403",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"username\": \"harry123\",\n    \"password\": \"harry123\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/login",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"login"
+											]
+										},
+										"description": "This request lets users log in.\n\nIt has a test script that sets the authorization token received in the response in the `accessToken` collection variable. This helps you reuse the token in other requests easily."
+									},
+									"code": 403,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "91"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"5b-OTdgSjzKonfqmY8iEqC0UNIzZ+w\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 12 May 2023 10:39:53 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+								},
+								{
+									"id": "d3f48500-0675-4dd7-9809-db65346954a1",
+									"name": "404",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"username\": \"harry123\",\n    \"password\": \"harry123\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/login",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"login"
+											]
+										},
+										"description": "This request lets users log in.\n\nIt has a test script that sets the authorization token received in the response in the `accessToken` collection variable. This helps you reuse the token in other requests easily."
+									},
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "91"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"5b-OTdgSjzKonfqmY8iEqC0UNIzZ+w\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 12 May 2023 10:39:53 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+								},
+								{
+									"id": "65d844d9-f337-4997-8283-d52ae01fa1d5",
+									"name": "500",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"username\": \"harry123\",\n    \"password\": \"harry123\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/login",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"login"
+											]
+										},
+										"description": "This request lets users log in.\n\nIt has a test script that sets the authorization token received in the response in the `accessToken` collection variable. This helps you reuse the token in other requests easily."
+									},
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "91"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"5b-OTdgSjzKonfqmY8iEqC0UNIzZ+w\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 12 May 2023 10:39:53 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
 								}
 							]
 						}
@@ -830,6 +2307,7 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "cebc73ba-5966-45cd-8ad3-52c7a2eab9d2",
 										"exec": [
 											"pm.test(\"should have status code as 200\", function () {",
 											"    pm.response.to.have.status(200);",
@@ -868,8 +2346,7 @@
 											"    pm.expect(tv4.validate(result, responseSchema)).to.be.true;",
 											"});"
 										],
-										"type": "text/javascript",
-										"id": "cebc73ba-5966-45cd-8ad3-52c7a2eab9d2"
+										"type": "text/javascript"
 									}
 								}
 							],
@@ -878,8 +2355,27 @@
 								"disableBodyPruning": true
 							},
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiaGFycnkxMjMiLCJpYXQiOjE2ODM4ODc4MjcsImV4cCI6MTY4Mzg5MTQyN30.hLf55ZfzHcr4mwi8l7dpzJWuHYOZCdfZMDav9X_rfZE",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
 								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 4\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
 								"url": {
 									"raw": "{{url}}/user",
 									"host": [
@@ -893,60 +2389,32 @@
 							},
 							"response": [
 								{
-									"id": "9e144752-28a7-438a-b03f-c33163ea285d",
-									"name": "401",
-									"originalRequest": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{url}}/user",
-											"host": [
-												"{{url}}"
-											],
-											"path": [
-												"user"
-											]
-										},
-										"description": "This request lets users view their profiles."
-									},
-									"status": "Unauthorized",
-									"code": 401,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Date",
-											"value": "Fri, 12 May 2023 09:18:07 GMT"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json; charset=utf-8"
-										},
-										{
-											"key": "Content-Length",
-											"value": "80"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "x-powered-by",
-											"value": "Express"
-										},
-										{
-											"key": "etag",
-											"value": "W/\"50-pF7L2BUdQsooflNE6rUz8FD5wA8\""
-										}
-									],
-									"cookie": [],
-									"body": "{\n    \"status\": false,\n    \"error\": {\n        \"message\": \"Auth headers not provided in the request.\"\n    }\n}"
-								},
-								{
 									"id": "05641753-842f-4586-ba8d-1d39acf9f27c",
 									"name": "200",
 									"originalRequest": {
 										"method": "GET",
-										"header": [],
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "x-api-key",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiaGFycnkxMjMiLCJpYXQiOjE2ODM4ODc4MjcsImV4cCI6MTY4Mzg5MTQyN30.hLf55ZfzHcr4mwi8l7dpzJWuHYOZCdfZMDav9X_rfZE",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\": 4\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
 										"url": {
 											"raw": "{{url}}/user",
 											"host": [
@@ -988,7 +2456,352 @@
 										}
 									],
 									"cookie": [],
-									"body": "{\n    \"status\": true,\n    \"data\": {\n        \"id\": 1,\n        \"username\": \"harry123\",\n        \"email\": \"harry.smith@example.com\",\n        \"password\": \"d4cfaf03600bf1a55ba4372ceb17ff9234576eb062c1f8b78bd3c53c703f194c\",\n        \"age\": 33,\n        \"role\": \"admin\",\n        \"firstName\": \"Harry\",\n        \"lastName\": \"Smith\",\n        \"createdAt\": \"2023-05-12T10:34:32.864Z\",\n        \"updatedAt\": \"2023-05-12T10:34:32.864Z\", \n        \"allowEmail\": 0,\n        \"allowName\": 0\n\n    }\n}"
+									"body": "{\n    \"status\": true,\n    \"data\": {\n        \"id\": 4,\n        \"username\": \"harry123\",\n        \"email\": \"harry.smith@example.com\",\n        \"password\": \"d4cfaf03600bf1a55ba4372ceb17ff9234576eb062c1f8b78bd3c53c703f194c\",\n        \"age\": 33,\n        \"firstName\": \"Harry\",\n        \"lastName\": \"Smith\",\n        \"createdAt\": \"2023-05-12T10:34:32.864Z\",\n        \"updatedAt\": \"2023-05-12T10:34:32.864Z\",\n        \"allowEmail\": 0,\n        \"allowName\": 0\n    }\n}"
+								},
+								{
+									"id": "9ac48c8e-b94e-40f8-ac7e-72c1a3ce8798",
+									"name": "400",
+									"originalRequest": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiaGFycnkxMjMiLCJpYXQiOjE2ODM4ODc4MjcsImV4cCI6MTY4Mzg5MTQyN30.hLf55ZfzHcr4mwi8l7dpzJWuHYOZCdfZMDav9X_rfZE",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\": 4\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/user",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"user"
+											]
+										},
+										"description": "This request lets users view their profiles."
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Fri, 12 May 2023 09:18:07 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "80"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "x-powered-by",
+											"value": "Express"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"50-pF7L2BUdQsooflNE6rUz8FD5wA8\""
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+								},
+								{
+									"id": "9e144752-28a7-438a-b03f-c33163ea285d",
+									"name": "401",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "x-api-key",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiaGFycnkxMjMiLCJpYXQiOjE2ODM4ODc4MjcsImV4cCI6MTY4Mzg5MTQyN30.hLf55ZfzHcr4mwi8l7dpzJWuHYOZCdfZMDav9X_rfZE",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\": 4\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/user",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"user"
+											]
+										},
+										"description": "This request lets users view their profiles."
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Fri, 12 May 2023 09:18:07 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "80"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "x-powered-by",
+											"value": "Express"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"50-pF7L2BUdQsooflNE6rUz8FD5wA8\""
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+								},
+								{
+									"id": "ff18c410-440b-41f2-a6b5-5a5053d22476",
+									"name": "403",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "x-api-key",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiaGFycnkxMjMiLCJpYXQiOjE2ODM4ODc4MjcsImV4cCI6MTY4Mzg5MTQyN30.hLf55ZfzHcr4mwi8l7dpzJWuHYOZCdfZMDav9X_rfZE",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\": 4\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/user",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"user"
+											]
+										},
+										"description": "This request lets users view their profiles."
+									},
+									"code": 403,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Fri, 12 May 2023 09:18:07 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "80"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "x-powered-by",
+											"value": "Express"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"50-pF7L2BUdQsooflNE6rUz8FD5wA8\""
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+								},
+								{
+									"id": "93e4de5e-b733-4cbe-9e25-badc6f49ab56",
+									"name": "404",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "x-api-key",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiaGFycnkxMjMiLCJpYXQiOjE2ODM4ODc4MjcsImV4cCI6MTY4Mzg5MTQyN30.hLf55ZfzHcr4mwi8l7dpzJWuHYOZCdfZMDav9X_rfZE",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\": 4\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/user",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"user"
+											]
+										},
+										"description": "This request lets users view their profiles."
+									},
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Fri, 12 May 2023 09:18:07 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "80"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "x-powered-by",
+											"value": "Express"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"50-pF7L2BUdQsooflNE6rUz8FD5wA8\""
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+								},
+								{
+									"id": "2be351ba-8332-412e-97c3-3c2b29ef0418",
+									"name": "500",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "x-api-key",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiaGFycnkxMjMiLCJpYXQiOjE2ODM4ODc4MjcsImV4cCI6MTY4Mzg5MTQyN30.hLf55ZfzHcr4mwi8l7dpzJWuHYOZCdfZMDav9X_rfZE",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\": 4\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/user",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"user"
+											]
+										},
+										"description": "This request lets users view their profiles."
+									},
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Fri, 12 May 2023 09:18:07 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "80"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "x-powered-by",
+											"value": "Express"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"50-pF7L2BUdQsooflNE6rUz8FD5wA8\""
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
 								}
 							]
 						},
@@ -1087,7 +2900,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"age\": 33,\n    \"firstName\": \"Harry\"\n}",
+											"raw": "{\n    \"age\": 33,\n    \"firstName\": \"Harry\",\n    \"allowEmail\": 0,\n    \"allowName\": 1\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -1135,7 +2948,295 @@
 										}
 									],
 									"cookie": [],
-									"body": "{\n    \"status\": true,\n    \"data\": {\n        \"id\": 1,\n        \"username\": \"harry123\",\n        \"email\": \"harry.smith@example.com\",\n        \"password\": \"d4cfaf03600bf1a55ba4372ceb17ff9234576eb062c1f8b78bd3c53c703f194c\",\n        \"age\": 21,\n        \"role\": \"admin\",\n        \"firstName\": \"Hello\",\n        \"lastName\": \"Smith\",\n        \"createdAt\": \"2023-05-12T10:34:32.864Z\",\n        \"updatedAt\": \"2023-05-12T10:37:47.928Z\",\n        \"allowEmail\": 0,\n        \"allowName\": 1\n    }\n}"
+									"body": "{\n    \"status\": true,\n    \"data\": {\n        \"id\": 1,\n        \"username\": \"harry123\",\n        \"email\": \"harry.smith@example.com\",\n        \"age\": 33,\n        \"role\": \"admin\",\n        \"firstName\": \"Hello\",\n        \"lastName\": \"Smith\",\n        \"createdAt\": \"2023-05-12T10:34:32.864Z\",\n        \"updatedAt\": \"2023-05-12T10:37:47.928Z\",\n        \"allowEmail\": 0,\n        \"allowName\": 1\n    }\n}"
+								},
+								{
+									"id": "004a4aeb-bdc6-43c9-9e37-5675393ce995",
+									"name": "400",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"age\": 1500,\n    \"firstName\": \"Harry\",\n    \"allowEmail\": 0,\n    \"allowName\": 1\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/user",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"user"
+											]
+										},
+										"description": "This request lets users update details on their profiles."
+									},
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Fri, 12 May 2023 09:18:43 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "150"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "x-powered-by",
+											"value": "Express"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"96-VPiQpM3iFgWueczgIStnyQNg+sM\""
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+								},
+								{
+									"id": "c492e16e-77ab-47f3-a3cf-7b4bfe2f8336",
+									"name": "401",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"age\": 33,\n    \"firstName\": \"Harry\",\n    \"allowEmail\": 0,\n    \"allowName\": 1\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/user",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"user"
+											]
+										},
+										"description": "This request lets users update details on their profiles."
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Fri, 12 May 2023 09:18:43 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "150"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "x-powered-by",
+											"value": "Express"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"96-VPiQpM3iFgWueczgIStnyQNg+sM\""
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+								},
+								{
+									"id": "4c69a2a2-2520-412b-bf14-790c4bdd4c77",
+									"name": "403",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"age\": 33,\n    \"firstName\": \"Harry\",\n    \"allowEmail\": 0,\n    \"allowName\": 1\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/user",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"user"
+											]
+										},
+										"description": "This request lets users update details on their profiles."
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Fri, 12 May 2023 09:18:43 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "150"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "x-powered-by",
+											"value": "Express"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"96-VPiQpM3iFgWueczgIStnyQNg+sM\""
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+								},
+								{
+									"id": "27f94235-797a-4dfc-8982-3be68bc39b45",
+									"name": "404",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"age\": 33,\n    \"firstName\": \"Harry\",\n    \"allowEmail\": 0,\n    \"allowName\": 1\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/user",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"user"
+											]
+										},
+										"description": "This request lets users update details on their profiles."
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Fri, 12 May 2023 09:18:43 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "150"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "x-powered-by",
+											"value": "Express"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"96-VPiQpM3iFgWueczgIStnyQNg+sM\""
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+								},
+								{
+									"id": "7f5c5f99-4b97-409e-83a5-ce70e5664b0b",
+									"name": "500",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"age\": 33,\n    \"firstName\": \"Harry\",\n    \"allowEmail\": 0,\n    \"allowName\": 1\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/user",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"user"
+											]
+										},
+										"description": "This request lets users update details on their profiles."
+									},
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Fri, 12 May 2023 09:18:43 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "150"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "x-powered-by",
+											"value": "Express"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"96-VPiQpM3iFgWueczgIStnyQNg+sM\""
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
 								}
 							]
 						}
