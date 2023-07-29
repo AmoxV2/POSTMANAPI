@@ -62,8 +62,7 @@
 									"path": [
 										"notes"
 									]
-								},
-								"description": "Create a new note."
+								}
 							},
 							"status": "OK",
 							"code": 200,
@@ -78,7 +77,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"id\": \"1\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\",\n    \"starsRating\": 5,\n    \"createdAt\": \"2023-05-18T16:20:00Z\",\n    \"updatedAt\": \"2023-05-18T16:20:00Z\"\n}"
+							"body": "{\n    \"id\": \"1\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\",\n    \"starsRating\": 5,\n    \"userName\": \"cichyDzik\",\n    \"userId\": 3,\n    \"createdAt\": \"2023-05-18T16:20:00Z\",\n    \"updatedAt\": \"2023-05-18T16:20:00Z\"\n}"
 						},
 						{
 							"id": "6dac234f-d66f-420f-8982-0ee4463309cb",
@@ -343,8 +342,7 @@
 									"path": [
 										"notes"
 									]
-								},
-								"description": "Retrieve all notes."
+								}
 							},
 							"status": "OK",
 							"code": 200,
@@ -1234,6 +1232,7 @@
 							},
 							"status": "OK",
 							"code": 200,
+							"_postman_previewlanguage": "Text",
 							"cookie": []
 						},
 						{
