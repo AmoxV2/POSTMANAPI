@@ -9,7 +9,7 @@ id = 1a3a22a5-b1af-4110-b67c-9d2b372198f3
 
 [config.relations.collections]
 rootDirectory = postman/collections
-files[] = {"id":"21115407-f191e85e-e143-4234-89d6-e8a0248ed3f4","path":"ANCarMessagerv0.json","metaData":{}}
+files[] = {"id":"21115407-7c4f8c28-6060-4e83-96ec-ee6bbf3b60a5","path":"ANCarMessagerv0.json","metaData":{}}
 
 [config.relations.collections.metaData]
 
