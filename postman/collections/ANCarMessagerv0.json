@@ -47,7 +47,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"userId\":\"3\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\",\n    \"starsRating\": 5\n}",
+									"raw": "{\n    \"sessionId\":\"3\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -87,7 +87,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"userId\":\"3\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\"\n}",
+									"raw": "{\n    \"sessionId\":\"3\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -128,7 +128,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"userId\":\"\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\",\n    \"starsRating\": 5\n}",
+									"raw": "{\n    \"sessionId\":\"3\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -169,7 +169,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"userId\":\"3\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\",\n    \"starsRating\": 5\n}",
+									"raw": "{\n    \"sessionId\":\"3\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -210,7 +210,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"userId\":\"3\",\n    \"registrationNumber\": \"--------\",\n    \"text\": \"good driver\",\n    \"starsRating\": 5\n}",
+									"raw": "{\n    \"sessionId\":\"3\",\n    \"registrationNumber\": \"--------\",\n    \"text\": \"good driver\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -251,7 +251,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"userId\":\"3\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\",\n    \"starsRating\": 5\n}",
+									"raw": "{\n    \"sessionId\":\"3\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -287,7 +287,7 @@
 					]
 				},
 				{
-					"name": "Get all vechicle notes",
+					"name": "Get vechicle notes",
 					"id": "eaaf9d28-f355-4880-871f-852301ca4dcb",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -331,7 +331,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"registrationNumber\": \"ABC1234\"\r\n}\r\n",
+									"raw": "",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -339,12 +339,37 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/notes",
+									"raw": "{{base_url}}/notes?registrationNumber=ABC1234&sessionid=123-456-789-111",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
 										"notes"
+									],
+									"query": [
+										{
+											"key": "registrationNumber",
+											"value": "ABC1234"
+										},
+										{
+											"key": "from",
+											"value": "29.07.2023",
+											"description": "data komentarza od",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "to",
+											"value": "7.08.2023",
+											"description": "data komentarza do",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "sessionid",
+											"value": "123-456-789-111",
+											"type": "text"
+										}
 									]
 								}
 							},
@@ -361,7 +386,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"notes\": [\n    {\n    \"id\": \"1\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\",\n    \"starsRating\": 5,\n    \"userName\": \"cichyDzik\",\n    \"userId\": 3,\n    \"createdAt\": \"2023-05-18T16:20:00Z\",\n    \"updatedAt\": \"2023-05-18T16:20:00Z\"\n},\n   {\n    \"id\": \"3\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"The driver didn't stop at green arrow\",\n    \"starsRating\": 3,\n    \"userName\": \"głośnyDzik\",\n    \"userId\": 35,\n    \"createdAt\": \"2023-05-18T16:20:00Z\",\n    \"updatedAt\": \"2023-05-18T16:20:00Z\"\n}\n  ]\n}\n"
+							"body": "{\n  \"notes\": [\n    {\n    \"id\": \"1\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\",\n    \"starsRating\": 5,\n    \"userName\": \"cichyDzik\",\n    \"userTrust\":\"1\",\n    \"createdAt\": \"2023-05-18T16:20:00Z\",\n    \"updatedAt\": \"2023-05-18T16:20:00Z\"\n    \n},\n   {\n    \"id\": \"3\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"The driver didn't stop at green arrow\",\n    \"starsRating\": 3,\n    \"userName\": null ,\n    \"userTrust\":\"3\",\n    \"createdAt\": \"2023-05-18T16:20:00Z\",\n    \"updatedAt\": \"2023-05-18T16:20:00Z\"\n}\n  ]\n}\n"
 						},
 						{
 							"id": "fdd1e2ef-44e2-406b-aa2d-f1c4283f9068",
@@ -666,7 +691,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"id\": \"1\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\",\n    \"starsRating\": 5,\n    \"userName\": \"cichyDzik\",\n    \"userId\": 3,\n    \"createdAt\": \"2023-05-18T16:20:00Z\",\n    \"updatedAt\": \"2023-05-18T16:20:00Z\"\n}"
+							"body": "{\n    \"id\": \"1\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\",\n    \"starsRating\": 5,\n    \"userName\": \"cichyDzik\",\n    \"createdAt\": \"2023-05-18T16:20:00Z\",\n    \"updatedAt\": \"2023-05-18T16:20:00Z\"\n}"
 						},
 						{
 							"id": "193943b8-b6a1-4f6e-99c4-707b4e5cf726",
@@ -913,13 +938,20 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/notes/:id",
+									"raw": "{{base_url}}/notes/:id?sessionid=123-456-789-111",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
 										"notes",
 										":id"
+									],
+									"query": [
+										{
+											"key": "sessionid",
+											"value": "123-456-789-111",
+											"type": "text"
+										}
 									],
 									"variable": [
 										{
@@ -943,7 +975,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"id\": \"1\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"updated opinion\",\n    \"starsRating\": 3,\n    \"userName\": \"cichyDzik\",\n    \"userId\": 3,\n    \"createdAt\": \"2023-05-18T16:20:00Z\",\n    \"updatedAt\": \"2023-05-18T16:20:00Z\"\n}"
+							"body": "{\n    \"id\": \"1\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"updated opinion\",\n    \"starsRating\": 3,\n    \"userName\": \"cichyDzik\",\n    \"createdAt\": \"2023-05-18T16:20:00Z\",\n    \"updatedAt\": \"2023-05-18T16:20:00Z\"\n}"
 						},
 						{
 							"id": "53d2fa53-5b08-434c-b2d4-6f83402181ce",
@@ -1218,13 +1250,20 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/notes/:id",
+									"raw": "{{base_url}}/notes/:id?sessionid=123-456-789-111",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
 										"notes",
 										":id"
+									],
+									"query": [
+										{
+											"key": "sessionid",
+											"value": "123-456-789-111",
+											"type": "text"
+										}
 									],
 									"variable": [
 										{
@@ -1494,7 +1533,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"username\": \"sandrawill\",\n    \"email\": \"sandrawilliam1996@example.com\",\n    \"age\": 20,\n    \"firstName\": \"Sandra\",\n    \"lastName\": \"William\",\n    \"password\": \"sandrawill\"\n}",
+											"raw": "{\n    \"username\": \"sandrawill\",\n    \"email\": \"sandrawilliam1996@example.com\",\n    \"age\": 20,\n    \"phone\": \"123455678\",\n    \"organizationid\": \"12444\", \n    \"firstName\": \"Sandra\",\n    \"lastName\": \"William\",\n    \"password\": \"sandrawill\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -1542,7 +1581,7 @@
 										}
 									],
 									"cookie": [],
-									"body": "{\n    \"status\": true,\n    \"data\": {\n        \"user\": {\n            \"id\": 4,\n            \"username\": \"sandrawill\",\n            \"email\": \"sandrawilliam1996@example.com\",\n            \"age\": 20,\n            \"firstName\": \"Sandra\",\n            \"lastName\": \"William\",\n            \"password\": \"f4967bd8be423c9a60507c579ad58b051ac0fdca9e9d0cbcc6887bbbb24e05f5\", \n            \"updatedAt\": \"2023-05-12T10:36:32.417Z\",\n            \"createdAt\": \"2023-05-12T10:36:32.417Z\"\n        },\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJuYW1lIjoic2FuZHJhd2lsbCIsImlhdCI6MTY4Mzg4Nzc5MiwiZXhwIjoxNjgzODkxMzkyfQ.1oWobYNftxayDssyHaP3E1wmRXLuGfRRXpuV6Oux-iU\"\n    }\n}"
+									"body": "{\n    \"status\": true,\n    \"data\": {\n        \"user\": {\n            \"id\": 4,\n            \"username\": \"sandrawill\",\n            \"email\": \"sandrawilliam1996@example.com\",\n            \"age\": 20,\n            \"phone\": \"123455678\",\n            \"organizationid\": \"12444\",\n            \"firstName\": \"Sandra\",\n            \"lastName\": \"William\",\n            \"password\": \"f4967bd8be423c9a60507c579ad58b051ac0fdca9e9d0cbcc6887bbbb24e05f5\",\n            \"updatedAt\": \"2023-05-12T10:36:32.417Z\",\n            \"createdAt\": \"2023-05-12T10:36:32.417Z\"\n        }\n    }\n}"
 								},
 								{
 									"id": "323ab111-7d80-4c19-8600-dd259e1d906b",
@@ -1941,7 +1980,7 @@
 										}
 									],
 									"cookie": [],
-									"body": "{\n    \"status\": true,\n    \"data\": {\n        \"user\": {\n            \"id\": 1,\n            \"username\": \"harry123\",\n            \"email\": \"harry.smith@example.com\",\n            \"password\": \"d4cfaf03600bf1a55ba4372ceb17ff9234576eb062c1f8b78bd3c53c703f194c\",\n            \"age\": 33,\n            \"firstName\": \"Harry\",\n            \"lastName\": \"Smith\",\n            \"createdAt\": \"2023-05-12T10:34:32.864Z\",\n            \"updatedAt\": \"2023-05-12T10:34:32.864Z\"\n        },\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiaGFycnkxMjMiLCJpYXQiOjE2ODM4ODc4MjcsImV4cCI6MTY4Mzg5MTQyN30.hLf55ZfzHcr4mwi8l7dpzJWuHYOZCdfZMDav9X_rfZE\"\n    }\n}"
+									"body": "{\n    \"status\": true,\n    \"data\": {\n        \"user\": {\n            \"id\": 1,\n            \"username\": \"harry123\",\n            \"email\": \"harry.smith@example.com\",\n            \"password\": \"d4cfaf03600bf1a55ba4372ceb17ff9234576eb062c1f8b78bd3c53c703f194c\",\n            \"age\": 33,\n            \"firstName\": \"Harry\",\n            \"lastName\": \"Smith\",\n            \"createdAt\": \"2023-05-12T10:34:32.864Z\",\n            \"updatedAt\": \"2023-05-12T10:34:32.864Z\"\n        },\n        \"sessionid\":\"111-222-333-444\"\n    }\n}"
 								},
 								{
 									"id": "ba7720c7-0be3-4b17-958b-da284dace9a8",
