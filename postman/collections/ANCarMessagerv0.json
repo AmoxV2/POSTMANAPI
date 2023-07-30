@@ -4149,6 +4149,258 @@
 											],
 											"cookie": [],
 											"body": "{\n  \"status\": \"success\",\n  \"message\": \"Image uploaded successfully\",\n  \"image_url\": \"https://example.com/images/beautiful-scenery.jpg\"\n}"
+										},
+										{
+											"id": "331e5dea-9d46-432d-89f5-82545c9e4cdf",
+											"name": "200",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "image",
+															"type": "file",
+															"src": "rTyLrmzLJ/beautiful-scenery.jpg"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{base_url}}/upload",
+													"host": [
+														"{{base_url}}"
+													],
+													"path": [
+														"upload"
+													]
+												},
+												"description": "This request allows users to upload the image that needs to be processed."
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"name": "Content-Type",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"id\": \"1\",\n    \"status\": \"success\",\n    \"message\": \"Image uploaded successfully\",\n    \"image_url\": \"https://example.com/images/beautiful-scenery.jpg\",\n    \"createdAt\": \"2023-05-18T16:20:00Z\",\n    \"updatedAt\": \"2023-05-18T16:20:00Z\"\n}"
+										},
+										{
+											"id": "8da60da0-7b55-4d44-b948-46b222a52e1d",
+											"name": "400",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "image",
+															"type": "file",
+															"src": "rTyLrmzLJ/beautiful-scenery.jpg"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{base_url}}/upload",
+													"host": [
+														"{{base_url}}"
+													],
+													"path": [
+														"upload"
+													]
+												},
+												"description": "This request allows users to upload the image that needs to be processed."
+											},
+											"status": "Request error",
+											"code": 400,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"name": "Content-Type",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"code\": \"string\",\n    \"message\": \"image reguired\"\n}"
+										},
+										{
+											"id": "cc28855d-3236-4e88-a101-7c42abe7df92",
+											"name": "401",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "image",
+															"type": "file",
+															"src": "rTyLrmzLJ/beautiful-scenery.jpg"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{base_url}}/upload",
+													"host": [
+														"{{base_url}}"
+													],
+													"path": [
+														"upload"
+													]
+												},
+												"description": "This request allows users to upload the image that needs to be processed."
+											},
+											"status": "Access unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"name": "Content-Type",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+										},
+										{
+											"id": "51b916e7-7945-4100-b981-b394969a2446",
+											"name": "404",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "image",
+															"type": "file",
+															"src": "rTyLrmzLJ/beautiful-scenery.jpg"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{base_url}}/upload",
+													"host": [
+														"{{base_url}}"
+													],
+													"path": [
+														"upload"
+													]
+												},
+												"description": "This request allows users to upload the image that needs to be processed."
+											},
+											"status": "Resource not found",
+											"code": 404,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"name": "Content-Type",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"code\": \"string\",\n    \"message\": \"photo not found\"\n}"
+										},
+										{
+											"id": "5f892ba9-f3e3-4070-95b8-3d4c5da42b09",
+											"name": "403",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "image",
+															"type": "file",
+															"src": "rTyLrmzLJ/beautiful-scenery.jpg"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{base_url}}/upload",
+													"host": [
+														"{{base_url}}"
+													],
+													"path": [
+														"upload"
+													]
+												},
+												"description": "This request allows users to upload the image that needs to be processed."
+											},
+											"status": "Access forbidden",
+											"code": 403,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"name": "Content-Type",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+										},
+										{
+											"id": "cea381b0-0c3d-4273-8348-9324372e9770",
+											"name": "500",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "image",
+															"type": "file",
+															"src": "rTyLrmzLJ/beautiful-scenery.jpg"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{base_url}}/upload",
+													"host": [
+														"{{base_url}}"
+													],
+													"path": [
+														"upload"
+													]
+												},
+												"description": "This request allows users to upload the image that needs to be processed."
+											},
+											"status": "Internal Server Error",
+											"code": 500,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"name": "Content-Type",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
 										}
 									]
 								},
