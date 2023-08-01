@@ -3984,7 +3984,13 @@
 											"name": "200",
 											"originalRequest": {
 												"method": "POST",
-												"header": [],
+												"header": [
+													{
+														"key": "sessionId",
+														"value": "333-123-2133-123",
+														"type": "text"
+													}
+												],
 												"body": {
 													"mode": "formdata",
 													"formdata": [
@@ -3998,7 +4004,7 @@
 													]
 												},
 												"url": {
-													"raw": "{{base_url}}/upload?image=plate-number.jpg",
+													"raw": "{{base_url}}/upload?image=plate-number.jpg&registrationNumber=ABC1234",
 													"host": [
 														"{{base_url}}"
 													],
@@ -4008,7 +4014,11 @@
 													"query": [
 														{
 															"key": "image",
-															"value": "plate-number.jpg",
+															"value": "plate-number.jpg"
+														},
+														{
+															"key": "registrationNumber",
+															"value": "ABC1234",
 															"type": "text"
 														}
 													]
@@ -4035,7 +4045,13 @@
 											"name": "400",
 											"originalRequest": {
 												"method": "POST",
-												"header": [],
+												"header": [
+													{
+														"key": "sessionId",
+														"value": "333-123-2133-123",
+														"type": "text"
+													}
+												],
 												"body": {
 													"mode": "formdata",
 													"formdata": [
@@ -4049,7 +4065,7 @@
 													]
 												},
 												"url": {
-													"raw": "{{base_url}}/upload?image=plate-number.jpg",
+													"raw": "{{base_url}}/upload?image=plate-number.jpg&registrationNumber=ABC1234",
 													"host": [
 														"{{base_url}}"
 													],
@@ -4059,7 +4075,11 @@
 													"query": [
 														{
 															"key": "image",
-															"value": "plate-number.jpg",
+															"value": "plate-number.jpg"
+														},
+														{
+															"key": "registrationNumber",
+															"value": "ABC1234",
 															"type": "text"
 														}
 													]
@@ -4086,7 +4106,13 @@
 											"name": "401",
 											"originalRequest": {
 												"method": "POST",
-												"header": [],
+												"header": [
+													{
+														"key": "sessionId",
+														"value": "333-123-2133-123",
+														"type": "text"
+													}
+												],
 												"body": {
 													"mode": "formdata",
 													"formdata": [
@@ -4100,7 +4126,7 @@
 													]
 												},
 												"url": {
-													"raw": "{{base_url}}/upload?image=plate-number.jpg",
+													"raw": "{{base_url}}/upload?image=plate-number.jpg&registrationNumber=ABC1234",
 													"host": [
 														"{{base_url}}"
 													],
@@ -4110,7 +4136,11 @@
 													"query": [
 														{
 															"key": "image",
-															"value": "plate-number.jpg",
+															"value": "plate-number.jpg"
+														},
+														{
+															"key": "registrationNumber",
+															"value": "ABC1234",
 															"type": "text"
 														}
 													]
@@ -4137,7 +4167,13 @@
 											"name": "403",
 											"originalRequest": {
 												"method": "POST",
-												"header": [],
+												"header": [
+													{
+														"key": "sessionId",
+														"value": "333-123-2133-123",
+														"type": "text"
+													}
+												],
 												"body": {
 													"mode": "formdata",
 													"formdata": [
@@ -4151,7 +4187,7 @@
 													]
 												},
 												"url": {
-													"raw": "{{base_url}}/upload?image=plate-number.jpg",
+													"raw": "{{base_url}}/upload?image=plate-number.jpg&registrationNumber=ABC1234",
 													"host": [
 														"{{base_url}}"
 													],
@@ -4161,7 +4197,11 @@
 													"query": [
 														{
 															"key": "image",
-															"value": "plate-number.jpg",
+															"value": "plate-number.jpg"
+														},
+														{
+															"key": "registrationNumber",
+															"value": "ABC1234",
 															"type": "text"
 														}
 													]
@@ -4188,7 +4228,13 @@
 											"name": "404",
 											"originalRequest": {
 												"method": "POST",
-												"header": [],
+												"header": [
+													{
+														"key": "sessionId",
+														"value": "333-123-2133-123",
+														"type": "text"
+													}
+												],
 												"body": {
 													"mode": "formdata",
 													"formdata": [
@@ -4202,7 +4248,7 @@
 													]
 												},
 												"url": {
-													"raw": "{{base_url}}/upload?image=plate-number.jpg",
+													"raw": "{{base_url}}/upload?image=plate-number.jpg&registrationNumber=ABC1234",
 													"host": [
 														"{{base_url}}"
 													],
@@ -4212,7 +4258,11 @@
 													"query": [
 														{
 															"key": "image",
-															"value": "plate-number.jpg",
+															"value": "plate-number.jpg"
+														},
+														{
+															"key": "registrationNumber",
+															"value": "ABC1234",
 															"type": "text"
 														}
 													]
@@ -4239,7 +4289,13 @@
 											"name": "500",
 											"originalRequest": {
 												"method": "POST",
-												"header": [],
+												"header": [
+													{
+														"key": "sessionId",
+														"value": "333-123-2133-123",
+														"type": "text"
+													}
+												],
 												"body": {
 													"mode": "formdata",
 													"formdata": [
@@ -4253,7 +4309,7 @@
 													]
 												},
 												"url": {
-													"raw": "{{base_url}}/upload?image=plate-number.jpg",
+													"raw": "{{base_url}}/upload?image=plate-number.jpg&registrationNumber=ABC1234",
 													"host": [
 														"{{base_url}}"
 													],
@@ -4263,7 +4319,11 @@
 													"query": [
 														{
 															"key": "image",
-															"value": "plate-number.jpg",
+															"value": "plate-number.jpg"
+														},
+														{
+															"key": "registrationNumber",
+															"value": "ABC1234",
 															"type": "text"
 														}
 													]
@@ -4325,6 +4385,11 @@
 												"method": "POST",
 												"header": [
 													{
+														"key": "sessionId",
+														"value": "333-123-2133-123",
+														"type": "text"
+													},
+													{
 														"key": "Content-Type",
 														"name": "Content-Type",
 														"value": "application/json",
@@ -4333,7 +4398,7 @@
 												],
 												"body": {
 													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\"\r\n}",
+													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\",\r\n  \"registrationNumber\": \"ABC1234\"\r\n}",
 													"options": {
 														"raw": {
 															"language": "json"
@@ -4372,10 +4437,22 @@
 											"name": "400",
 											"originalRequest": {
 												"method": "POST",
-												"header": [],
+												"header": [
+													{
+														"key": "sessionId",
+														"value": "333-123-2133-123",
+														"type": "text"
+													},
+													{
+														"key": "Content-Type",
+														"name": "Content-Type",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
 												"body": {
 													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\"\r\n}",
+													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\",\r\n  \"registrationNumber\": \"ABC1234\"\r\n}",
 													"options": {
 														"raw": {
 															"language": "json"
@@ -4414,10 +4491,22 @@
 											"name": "401",
 											"originalRequest": {
 												"method": "POST",
-												"header": [],
+												"header": [
+													{
+														"key": "sessionId",
+														"value": "333-123-2133-123",
+														"type": "text"
+													},
+													{
+														"key": "Content-Type",
+														"name": "Content-Type",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
 												"body": {
 													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\"\r\n}",
+													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\",\r\n  \"registrationNumber\": \"ABC1234\"\r\n}",
 													"options": {
 														"raw": {
 															"language": "json"
@@ -4456,10 +4545,22 @@
 											"name": "403",
 											"originalRequest": {
 												"method": "POST",
-												"header": [],
+												"header": [
+													{
+														"key": "sessionId",
+														"value": "333-123-2133-123",
+														"type": "text"
+													},
+													{
+														"key": "Content-Type",
+														"name": "Content-Type",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
 												"body": {
 													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\"\r\n}",
+													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\",\r\n  \"registrationNumber\": \"ABC1234\"\r\n}",
 													"options": {
 														"raw": {
 															"language": "json"
@@ -4498,10 +4599,22 @@
 											"name": "404",
 											"originalRequest": {
 												"method": "POST",
-												"header": [],
+												"header": [
+													{
+														"key": "sessionId",
+														"value": "333-123-2133-123",
+														"type": "text"
+													},
+													{
+														"key": "Content-Type",
+														"name": "Content-Type",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
 												"body": {
 													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https    ://example.com/images/image123.jpg\"\r\n}",
+													"raw": "{\r\n  \"image_url\": \"https    ://example.com/images/image123.jpg\",\r\n  \"registrationNumber\": \"ABC1234\"\r\n}",
 													"options": {
 														"raw": {
 															"language": "json"
@@ -4540,10 +4653,22 @@
 											"name": "500",
 											"originalRequest": {
 												"method": "POST",
-												"header": [],
+												"header": [
+													{
+														"key": "sessionId",
+														"value": "333-123-2133-123",
+														"type": "text"
+													},
+													{
+														"key": "Content-Type",
+														"name": "Content-Type",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
 												"body": {
 													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\"\r\n}",
+													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\",\r\n  \"registrationNumber\": \"ABC1234\"\r\n}",
 													"options": {
 														"raw": {
 															"language": "json"
@@ -4558,274 +4683,6 @@
 													"path": [
 														"upload",
 														"url"
-													]
-												},
-												"description": "This request allows users to upload the image that needs to be processed."
-											},
-											"status": "Internal Server Error",
-											"code": 500,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
-										}
-									]
-								},
-								{
-									"name": "Update image",
-									"id": "5c74115e-251d-4d3b-8479-5a68a3a1811f",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "PUT",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n  \"metadata\": {\n    \"description\": \"A beautiful landscape image\",\n    \"tags\": [\"nature\", \"scenery\", \"outdoors\"]\n  }\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{base_url}}/update",
-											"host": [
-												"{{base_url}}"
-											],
-											"path": [
-												"update"
-											]
-										},
-										"description": "Updates the metadata of the image identified by the image ID."
-									},
-									"response": [
-										{
-											"id": "786ea080-20fa-4059-9479-b97edfd4674f",
-											"name": "200",
-											"originalRequest": {
-												"header": [],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"metadata\": {\r\n    \"description\": \"Platenumber\",\r\n    \"tags\": [\"Platenumber\"]\r\n  }\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/update",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"update"
-													]
-												}
-											},
-											"status": "OK",
-											"code": 200,
-											"_postman_previewlanguage": "json",
-											"header": [],
-											"cookie": [],
-											"body": "{\n    \"success\": true,\n    \"message\": \"Image metadata updated successfully.\"\n}"
-										},
-										{
-											"id": "542d5133-962f-4ec0-ade1-09de3449f532",
-											"name": "400",
-											"originalRequest": {
-												"method": "POST",
-												"header": [],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"metadata\": {\r\n    \"description\": \"Platenumber\",\r\n    \"tags\": [\"Platenumber\"]\r\n  }\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/update",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"update"
-													]
-												},
-												"description": "This request allows users to upload the image that needs to be processed."
-											},
-											"status": "Request error",
-											"code": 400,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
-										},
-										{
-											"id": "9dca7949-4c40-4cdb-9a2b-9cffeedcd117",
-											"name": "401",
-											"originalRequest": {
-												"method": "POST",
-												"header": [],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\"\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/update",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"update"
-													]
-												},
-												"description": "This request allows users to upload the image that needs to be processed."
-											},
-											"status": "Access unauthorized",
-											"code": 401,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
-										},
-										{
-											"id": "acb0638c-0ecd-4d29-823f-2fde442fb007",
-											"name": "403",
-											"originalRequest": {
-												"method": "POST",
-												"header": [],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\"\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/update",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"update"
-													]
-												},
-												"description": "This request allows users to upload the image that needs to be processed."
-											},
-											"status": "Access forbidden",
-											"code": 403,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
-										},
-										{
-											"id": "4366c368-4129-464d-a8f7-db509c606cd5",
-											"name": "404",
-											"originalRequest": {
-												"method": "POST",
-												"header": [],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https    ://example.com/images/image123.jpg\"\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/update",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"update"
-													]
-												},
-												"description": "This request allows users to upload the image that needs to be processed."
-											},
-											"status": "Resource not found",
-											"code": 404,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
-										},
-										{
-											"id": "59590b1c-d039-484a-aff7-8bc86a76167f",
-											"name": "500",
-											"originalRequest": {
-												"method": "POST",
-												"header": [],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\"\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/update",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"update"
 													]
 												},
 												"description": "This request allows users to upload the image that needs to be processed."
@@ -4873,21 +4730,21 @@
 											"name": "200",
 											"originalRequest": {
 												"method": "DELETE",
-												"header": [],
+												"header": [
+													{
+														"key": "sessionId",
+														"value": "111-222-333-444",
+														"type": "text"
+													}
+												],
 												"url": {
-													"raw": "{{base_url}}/delete/:id?sessionId=111-222-333-444",
+													"raw": "{{base_url}}/delete/:id",
 													"host": [
 														"{{base_url}}"
 													],
 													"path": [
 														"delete",
 														":id"
-													],
-													"query": [
-														{
-															"key": "sessionId",
-															"value": "111-222-333-444"
-														}
 													],
 													"variable": [
 														{
@@ -4910,21 +4767,21 @@
 											"name": "400",
 											"originalRequest": {
 												"method": "DELETE",
-												"header": [],
+												"header": [
+													{
+														"key": "sessionId",
+														"value": "333-123-2133-123",
+														"type": "text"
+													}
+												],
 												"url": {
-													"raw": "{{base_url}}/delete/:id?sessionId=111-222-333-444",
+													"raw": "{{base_url}}/delete/:id",
 													"host": [
 														"{{base_url}}"
 													],
 													"path": [
 														"delete",
 														":id"
-													],
-													"query": [
-														{
-															"key": "sessionId",
-															"value": "111-222-333-444"
-														}
 													],
 													"variable": [
 														{
@@ -4955,21 +4812,21 @@
 											"name": "401",
 											"originalRequest": {
 												"method": "DELETE",
-												"header": [],
+												"header": [
+													{
+														"key": "sessionId",
+														"value": "333-123-2133-123",
+														"type": "text"
+													}
+												],
 												"url": {
-													"raw": "{{base_url}}/delete/:id?sessionId=111-222-333-444",
+													"raw": "{{base_url}}/delete/:id",
 													"host": [
 														"{{base_url}}"
 													],
 													"path": [
 														"delete",
 														":id"
-													],
-													"query": [
-														{
-															"key": "sessionId",
-															"value": "111-222-333-444"
-														}
 													],
 													"variable": [
 														{
@@ -5000,21 +4857,21 @@
 											"name": "403",
 											"originalRequest": {
 												"method": "DELETE",
-												"header": [],
+												"header": [
+													{
+														"key": "sessionId",
+														"value": "333-123-2133-123",
+														"type": "text"
+													}
+												],
 												"url": {
-													"raw": "{{base_url}}/delete/:id?sessionId=111-222-333-444",
+													"raw": "{{base_url}}/delete/:id",
 													"host": [
 														"{{base_url}}"
 													],
 													"path": [
 														"delete",
 														":id"
-													],
-													"query": [
-														{
-															"key": "sessionId",
-															"value": "111-222-333-444"
-														}
 													],
 													"variable": [
 														{
@@ -5045,21 +4902,21 @@
 											"name": "404",
 											"originalRequest": {
 												"method": "DELETE",
-												"header": [],
+												"header": [
+													{
+														"key": "sessionId",
+														"value": "333-123-2133-123",
+														"type": "text"
+													}
+												],
 												"url": {
-													"raw": "{{base_url}}/delete/:id?sessionId=111-222-333-444",
+													"raw": "{{base_url}}/delete/:id",
 													"host": [
 														"{{base_url}}"
 													],
 													"path": [
 														"delete",
 														":id"
-													],
-													"query": [
-														{
-															"key": "sessionId",
-															"value": "111-222-333-444"
-														}
 													],
 													"variable": [
 														{
@@ -5090,21 +4947,21 @@
 											"name": "500",
 											"originalRequest": {
 												"method": "DELETE",
-												"header": [],
+												"header": [
+													{
+														"key": "sessionId",
+														"value": "333-123-2133-123",
+														"type": "text"
+													}
+												],
 												"url": {
-													"raw": "{{base_url}}/delete/:id?sessionId=111-222-333-444",
+													"raw": "{{base_url}}/delete/:id",
 													"host": [
 														"{{base_url}}"
 													],
 													"path": [
 														"delete",
 														":id"
-													],
-													"query": [
-														{
-															"key": "sessionId",
-															"value": "111-222-333-444"
-														}
 													],
 													"variable": [
 														{
@@ -5131,14 +4988,365 @@
 											"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
 										}
 									]
+								}
+							],
+							"id": "0f943a96-dfb7-4ec7-bc9a-53564db78b57",
+							"description": "This folder contains requests related to uploading images to the API for processing."
+						},
+						{
+							"name": "Get image Auth",
+							"id": "89a71390-16ab-49fd-a810-05d9c5e8c4e9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/get",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"get"
+									]
+								},
+								"description": "Returns the image URL identified by the image ID."
+							},
+							"response": [
+								{
+									"id": "c3f0fb8a-3b47-45fe-a599-590e37256bc2",
+									"name": "200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "sessionId",
+												"value": "333-123-2133-123",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/get?registrationNumber=ABC1234",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"get"
+											],
+											"query": [
+												{
+													"key": "registrationNumber",
+													"value": "ABC1234"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "[{\n    \"id\": \"1\",\n    \"image_url\": \"https://example.com/images/beautiful-scenery.jpg\",\n    \"createdAt\": \"2023-05-18T16:20:00Z\",\n    \"updatedAt\": \"2023-05-18T16:20:00Z\"\n},\n{\n    \"id\": \"2\",\n    \"image_url\": \"https://example.com/images/beautiful-scenery.jpg\",\n    \"createdAt\": \"2023-05-18T16:20:00Z\",\n    \"updatedAt\": \"2023-05-18T16:20:00Z\"\n}\n]"
 								},
 								{
-									"name": "Get image",
-									"id": "89a71390-16ab-49fd-a810-05d9c5e8c4e9",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
+									"id": "6181331d-914f-4469-ac74-47567ae83dec",
+									"name": "400",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "sessionId",
+												"value": "333-123-2133-123",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/get?registrationNumber=ABC1234",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"get"
+											],
+											"query": [
+												{
+													"key": "registrationNumber",
+													"value": "ABC1234",
+													"type": "text"
+												}
+											]
+										},
+										"description": "Retrieve the details of a specific note by providing the note ID."
 									},
-									"request": {
+									"status": "Reguest error",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+								},
+								{
+									"id": "f6380fd8-22d9-42ec-a05c-c30a744993f7",
+									"name": "401",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "sessionId",
+												"value": "333-123-2133-123",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/get?registrationNumber=ABC1234",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"get"
+											],
+											"query": [
+												{
+													"key": "registrationNumber",
+													"value": "ABC1234",
+													"type": "text"
+												}
+											]
+										},
+										"description": "Retrieve the details of a specific note by providing the note ID."
+									},
+									"status": "Access unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+								},
+								{
+									"id": "30d3d4c9-64a0-41cb-8a9e-da3b23d39e50",
+									"name": "403",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "sessionId",
+												"value": "333-123-2133-123",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/get?registrationNumber=ABC1234",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"get"
+											],
+											"query": [
+												{
+													"key": "registrationNumber",
+													"value": "ABC1234",
+													"type": "text"
+												}
+											]
+										},
+										"description": "Retrieve the details of a specific note by providing the note ID."
+									},
+									"status": "Acces forbidden",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+								},
+								{
+									"id": "f351f199-03fd-43c5-af4c-1896112100e0",
+									"name": "404",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "sessionId",
+												"value": "333-123-2133-123",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/get?registrationNumber=ABC1234",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"get"
+											],
+											"query": [
+												{
+													"key": "registrationNumber",
+													"value": "ABC1234",
+													"type": "text"
+												}
+											]
+										},
+										"description": "Retrieve the details of a specific note by providing the note ID."
+									},
+									"status": "Resource not found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": \"string\",\n    \"message\": \"there is no image\"\n}"
+								},
+								{
+									"id": "924db628-0f92-4d0f-891a-cf280a74ee3a",
+									"name": "500",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "sessionId",
+												"value": "333-123-2133-123",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/get?registrationNumber=ABC1234",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"get"
+											],
+											"query": [
+												{
+													"key": "registrationNumber",
+													"value": "ABC1234",
+													"type": "text"
+												}
+											]
+										},
+										"description": "Retrieve the details of a specific note by providing the note ID."
+									},
+									"status": "internal server error",
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Get image",
+							"id": "41d71034-6c63-4e8d-b280-cb1942fb5ffa",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/get",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"get"
+									]
+								},
+								"description": "Returns the image URL identified by the image ID."
+							},
+							"response": [
+								{
+									"id": "465f39ff-d35e-44c1-b1c0-df331dde2e33",
+									"name": "200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}/get?registrationNumber=ABC1234",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"get"
+											],
+											"query": [
+												{
+													"key": "registrationNumber",
+													"value": "ABC1234",
+													"type": "text"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"picturesCount\": 3,\n    \"avgTrust\" : 3.5 , \n    \"imagePayment\": \"https:/bank.com\"\n}"
+								},
+								{
+									"id": "0c8a00f9-24c0-4053-bf85-ca8daf4c9f6e",
+									"name": "400",
+									"originalRequest": {
 										"method": "GET",
 										"header": [],
 										"url": {
@@ -5150,1626 +5358,152 @@
 												"get"
 											]
 										},
-										"description": "Returns the image URL identified by the image ID."
+										"description": "Retrieve the details of a specific note by providing the note ID."
 									},
-									"response": [
+									"status": "Reguest error",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
 										{
-											"id": "f3d05221-0604-4ffb-9a29-af7c2d24ec3f",
-											"name": "Get image",
-											"originalRequest": {
-												"method": "GET",
-												"header": [],
-												"url": {
-													"raw": "{{base_url}}/get",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"get"
-													]
-												},
-												"description": "Returns the image URL identified by the image ID."
-											},
-											"status": "OK",
-											"code": 200,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n  \"image_url\": \"https://example.com/images/image123.jpg\"\n}"
-										},
-										{
-											"id": "c3f0fb8a-3b47-45fe-a599-590e37256bc2",
-											"name": "200",
-											"originalRequest": {
-												"header": [],
-												"url": {
-													"raw": "{{base_url}}/get",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"get"
-													]
-												}
-											},
-											"status": "OK",
-											"code": 200,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n  \"image_url\": \"https://example.com/images/image123.jpg\"\n}"
-										},
-										{
-											"id": "6181331d-914f-4469-ac74-47567ae83dec",
-											"name": "400",
-											"originalRequest": {
-												"method": "GET",
-												"header": [],
-												"url": {
-													"raw": "{{base_url}}/get",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"get"
-													]
-												},
-												"description": "Retrieve the details of a specific note by providing the note ID."
-											},
-											"status": "Reguest error",
-											"code": 400,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
-										},
-										{
-											"id": "f6380fd8-22d9-42ec-a05c-c30a744993f7",
-											"name": "401",
-											"originalRequest": {
-												"method": "GET",
-												"header": [],
-												"url": {
-													"raw": "{{base_url}}/get",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"get"
-													]
-												},
-												"description": "Retrieve the details of a specific note by providing the note ID."
-											},
-											"status": "Access unauthorized",
-											"code": 401,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
-										},
-										{
-											"id": "30d3d4c9-64a0-41cb-8a9e-da3b23d39e50",
-											"name": "403",
-											"originalRequest": {
-												"method": "GET",
-												"header": [],
-												"url": {
-													"raw": "{{base_url}}/get",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"get"
-													]
-												},
-												"description": "Retrieve the details of a specific note by providing the note ID."
-											},
-											"status": "Acces forbidden",
-											"code": 400,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
-										},
-										{
-											"id": "f351f199-03fd-43c5-af4c-1896112100e0",
-											"name": "404",
-											"originalRequest": {
-												"method": "GET",
-												"header": [],
-												"url": {
-													"raw": "{{base_url}}/get",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"get"
-													]
-												},
-												"description": "Retrieve the details of a specific note by providing the note ID."
-											},
-											"status": "Resource not found",
-											"code": 404,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"code\": \"string\",\n    \"message\": \"there is no image\"\n}"
-										},
-										{
-											"id": "924db628-0f92-4d0f-891a-cf280a74ee3a",
-											"name": "500",
-											"originalRequest": {
-												"method": "GET",
-												"header": [],
-												"url": {
-													"raw": "{{base_url}}/get",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"get"
-													]
-												},
-												"description": "Retrieve the details of a specific note by providing the note ID."
-											},
-											"status": "internal server error",
-											"code": 500,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
 										}
-									]
-								}
-							],
-							"id": "0f943a96-dfb7-4ec7-bc9a-53564db78b57",
-							"description": "This folder contains requests related to uploading images to the API for processing."
-						},
-						{
-							"name": "Image processing",
-							"item": [
-								{
-									"name": "Resize image",
-									"id": "6ab0a505-e469-465e-bf43-1bcd4cb62dc2",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "POST",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n  \"image_url\": \"https://example.com/images/image123.jpg\",\n  \"width\": 800,\n  \"height\": 600\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{base_url}}/resize",
-											"host": [
-												"{{base_url}}"
-											],
-											"path": [
-												"resize"
-											]
-										},
-										"description": "Lets you resize an image i.e. change the dimensions (width and height) of an image while maintaining its aspect ratio."
-									},
-									"response": [
-										{
-											"id": "a075bec1-a8a9-4df0-8a79-00b1f5df0c94",
-											"name": "200",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Content-Type",
-														"name": "Content-Type",
-														"value": "application/json",
-														"type": "text"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\",\r\n  \"width\": 800,\r\n  \"height\": 600\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/resize",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"resize"
-													]
-												},
-												"description": "This request allows users to upload the image that needs to be processed."
-											},
-											"status": "OK",
-											"code": 200,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n  \"status\": \"success\",\n  \"message\": \"Image resized successfully\",\n  \"resized_image_url\": \"https://example.com/images/resized/image123_resized.jpg\"\n}"
-										},
-										{
-											"id": "f8eb4464-a357-4da6-bbd2-1a83df4b2868",
-											"name": "400",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Content-Type",
-														"name": "Content-Type",
-														"value": "application/json",
-														"type": "text"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\",\r\n  \"width\": (80 0,\r\n  \"height\": 600\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/resize",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"resize"
-													]
-												},
-												"description": "This request allows users to upload the image that needs to be processed."
-											},
-											"status": "Request error",
-											"code": 400,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"code\": \"string\",\n    \"message\": \"image reguired\"\n}"
-										},
-										{
-											"id": "d4c30b1a-a437-4938-86b4-5b9ee3384545",
-											"name": "401",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Content-Type",
-														"name": "Content-Type",
-														"value": "application/json",
-														"type": "text"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\",\r\n  \"width\": 800,\r\n  \"height\": 600\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/resize",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"resize"
-													]
-												},
-												"description": "This request allows users to upload the image that needs to be processed."
-											},
-											"status": "Access unauthorized",
-											"code": 401,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
-										},
-										{
-											"id": "e9ad7dfa-58d8-4ccd-bb77-7203bd7e5d6e",
-											"name": "403",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Content-Type",
-														"name": "Content-Type",
-														"value": "application/json",
-														"type": "text"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\",\r\n  \"width\": 800,\r\n  \"height\": 600\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/resize",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"resize"
-													]
-												},
-												"description": "This request allows users to upload the image that needs to be processed."
-											},
-											"status": "Access forbidden",
-											"code": 403,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
-										},
-										{
-											"id": "252e6ae9-2958-4730-9bf1-866a7c600ac2",
-											"name": "404",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Content-Type",
-														"name": "Content-Type",
-														"value": "application/json",
-														"type": "text"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image1----==3.jpg\",\r\n  \"width\": 800,\r\n  \"height\": 600\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/resize",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"resize"
-													]
-												},
-												"description": "This request allows users to upload the image that needs to be processed."
-											},
-											"status": "Resource not found",
-											"code": 404,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"code\": \"string\",\n    \"message\": \"photo not found\"\n}"
-										},
-										{
-											"id": "4695a9d2-cabb-4175-abde-8b1fb2777a23",
-											"name": "500",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Content-Type",
-														"name": "Content-Type",
-														"value": "application/json",
-														"type": "text"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\",\r\n  \"width\": 800,\r\n  \"height\": 600\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/resize",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"resize"
-													]
-												},
-												"description": "This request allows users to upload the image that needs to be processed."
-											},
-											"status": "Internal Server Error",
-											"code": 500,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
-										}
-									]
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
 								},
 								{
-									"name": "Crop image",
-									"id": "33214cbc-fc94-421f-bb6e-0779bcdd7d0b",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "POST",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n  \"image_url\": \"https://example.com/images/image123.jpg\",\n  \"x\": 100,\n  \"y\": 200,\n  \"width\": 400,\n  \"height\": 300\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{base_url}}/crop",
-											"host": [
-												"{{base_url}}"
-											],
-											"path": [
-												"crop"
-											]
-										},
-										"description": "Lets you crop an image i.e. select and extract a specific rectangular region or portion of an image while discarding the rest."
-									},
-									"response": [
-										{
-											"id": "114db8e3-06e7-44bd-8645-05a649fa603d",
-											"name": "200",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Content-Type",
-														"name": "Content-Type",
-														"value": "application/json",
-														"type": "text"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\",\r\n  \"x\": 100,\r\n  \"y\": 200,\r\n  \"width\": 400,\r\n  \"height\": 300\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/crop",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"crop"
-													]
-												},
-												"description": "This request allows users to upload the image that needs to be processed."
-											},
-											"status": "OK",
-											"code": 200,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n  \"status\": \"success\",\n  \"message\": \"Image cropped successfully\",\n  \"cropped_image_url\": \"https://example.com/images/cropped/image123_cropped.jpg\"\n}"
-										},
-										{
-											"id": "2c0c4007-1179-4317-88e3-e121862b36d6",
-											"name": "400",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Content-Type",
-														"name": "Content-Type",
-														"value": "application/json",
-														"type": "text"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\",\r\n  \"x\": 100,\r\n  \"y\": 200,\r\n  \"width\": 400,\r\n  \"height\": 300\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/resize",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"resize"
-													]
-												},
-												"description": "This request allows users to upload the image that needs to be processed."
-											},
-											"status": "Request error",
-											"code": 400,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"code\": \"string\",\n    \"message\": \"image reguired\"\n}"
-										},
-										{
-											"id": "5dabbd97-13b0-425e-92c9-443ac1fdecd3",
-											"name": "401",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Content-Type",
-														"name": "Content-Type",
-														"value": "application/json",
-														"type": "text"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\",\r\n  \"x\": 100,\r\n  \"y\": 200,\r\n  \"width\": 400,\r\n  \"height\": 300\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/crop",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"crop"
-													]
-												},
-												"description": "This request allows users to upload the image that needs to be processed."
-											},
-											"status": "Access unauthorized",
-											"code": 401,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
-										},
-										{
-											"id": "0fd7fd13-38b3-4b9b-a59a-6feb8d1dad12",
-											"name": "403",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Content-Type",
-														"name": "Content-Type",
-														"value": "application/json",
-														"type": "text"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\",\r\n  \"x\": 100,\r\n  \"y\": 200,\r\n  \"width\": 400,\r\n  \"height\": 300\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/crop",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"crop"
-													]
-												},
-												"description": "This request allows users to upload the image that needs to be processed."
-											},
-											"status": "Access forbidden",
-											"code": 403,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
-										},
-										{
-											"id": "3959970b-1e96-4471-88a5-2e0c654561d9",
-											"name": "404",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Content-Type",
-														"name": "Content-Type",
-														"value": "application/json",
-														"type": "text"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\",\r\n  \"x\": 100,\r\n  \"y\": 200,\r\n  \"width\": 400,\r\n  \"height\": 300\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/crop",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"crop"
-													]
-												},
-												"description": "This request allows users to upload the image that needs to be processed."
-											},
-											"status": "Resource not found",
-											"code": 404,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"code\": \"string\",\n    \"message\": \"photo not found\"\n}"
-										},
-										{
-											"id": "da6672c3-f2b4-4418-afbe-cefc124511b3",
-											"name": "500",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Content-Type",
-														"name": "Content-Type",
-														"value": "application/json",
-														"type": "text"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\",\r\n  \"x\": 100,\r\n  \"y\": 200,\r\n  \"width\": 400,\r\n  \"height\": 300\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/crop",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"crop"
-													]
-												},
-												"description": "This request allows users to upload the image that needs to be processed."
-											},
-											"status": "Internal Server Error",
-											"code": 500,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
-										}
-									]
-								},
-								{
-									"name": "Rotate image",
-									"id": "bb189470-edf4-4b34-9c93-9c06b5a212a5",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "POST",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n  \"image_url\": \"https://example.com/images/image123.jpg\",\n  \"angle\": 90\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{base_url}}/rotate",
-											"host": [
-												"{{base_url}}"
-											],
-											"path": [
-												"rotate"
-											]
-										},
-										"description": "Lets you rotate an image i.e. change the orientation of an image by a certain angle."
-									},
-									"response": [
-										{
-											"id": "584931d0-a736-4751-b87d-2041d6e3ecbb",
-											"name": "200",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Content-Type",
-														"name": "Content-Type",
-														"value": "application/json",
-														"type": "text"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\",\r\n  \"angle\": 90\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/rotate",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"rotate"
-													]
-												},
-												"description": "This request allows users to upload the image that needs to be processed."
-											},
-											"status": "OK",
-											"code": 200,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n  \"status\": \"success\",\n  \"message\": \"Image rotated successfully\",\n  \"rotated_image_url\": \"https://example.com/images/rotated/image123_rotated.jpg\"\n}"
-										},
-										{
-											"id": "9a691d78-e8f3-46e2-b8fd-f3ca95258e85",
-											"name": "400",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Content-Type",
-														"name": "Content-Type",
-														"value": "application/json",
-														"type": "text"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/i    mages/image123.jpg\",\r\n  \"angle\": 90\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/rotate",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"rotate"
-													]
-												},
-												"description": "This request allows users to upload the image that needs to be processed."
-											},
-											"status": "Request error",
-											"code": 400,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"code\": \"string\",\n    \"message\": \"image reguired\"\n}"
-										},
-										{
-											"id": "c5f43e2b-beca-45f1-864d-c626c9f867cd",
-											"name": "401",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Content-Type",
-														"name": "Content-Type",
-														"value": "application/json",
-														"type": "text"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\",\r\n  \"angle\": 90\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/rotate",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"rotate"
-													]
-												},
-												"description": "This request allows users to upload the image that needs to be processed."
-											},
-											"status": "Access unauthorized",
-											"code": 401,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
-										},
-										{
-											"id": "6c2c1cdb-4417-4b91-a114-6a8690cebf1c",
-											"name": "403",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Content-Type",
-														"name": "Content-Type",
-														"value": "application/json",
-														"type": "text"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\",\r\n  \"angle\": 90\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/rotate",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"rotate"
-													]
-												},
-												"description": "This request allows users to upload the image that needs to be processed."
-											},
-											"status": "Access forbidden",
-											"code": 403,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
-										},
-										{
-											"id": "cf2661e1-5f19-4b72-b267-107569159552",
-											"name": "404",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Content-Type",
-														"name": "Content-Type",
-														"value": "application/json",
-														"type": "text"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\",\r\n  \"angle\": 90\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/rotate",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"rotate"
-													]
-												},
-												"description": "This request allows users to upload the image that needs to be processed."
-											},
-											"status": "Resource not found",
-											"code": 404,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"code\": \"string\",\n    \"message\": \"photo not found\"\n}"
-										},
-										{
-											"id": "494f3d99-f167-4c07-b76e-d00ce87358fa",
-											"name": "500",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Content-Type",
-														"name": "Content-Type",
-														"value": "application/json",
-														"type": "text"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\",\r\n  \"angle\": 90\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/rotate",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"rotate"
-													]
-												},
-												"description": "This request allows users to upload the image that needs to be processed."
-											},
-											"status": "Internal Server Error",
-											"code": 500,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
-										}
-									]
-								},
-								{
-									"name": "Add a watermark",
-									"id": "910d02a6-5db6-4e2b-95ac-13ee140ad052",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "POST",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n  \"image_url\": \"https://example.com/images/image123.jpg\",\n  \"watermark_text\": \"Confidential\", \n  \"position\": \"bottom-right\"\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{base_url}}/watermark",
-											"host": [
-												"{{base_url}}"
-											],
-											"path": [
-												"watermark"
-											]
-										},
-										"description": "Lets you add a watermark to the image i.e. a visible overlay, typically a logo, text, or an identifying mark, onto an image to indicate ownership, protect copyright, or add branding."
-									},
-									"response": [
-										{
-											"id": "d62577ab-b85b-4cdc-9fb4-e2b85fa5ae45",
-											"name": "Watermark image",
-											"originalRequest": {
-												"method": "POST",
-												"header": [],
-												"body": {
-													"mode": "raw",
-													"raw": "{\n  \"image_url\": \"https://example.com/images/image123.jpg\",\n  \"watermark_text\": \"Confidential\", \n  \"position\": \"bottom-right\"\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/watermark",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"watermark"
-													]
-												},
-												"description": "Lets you add a watermark to the image i.e. a visible overlay, typically a logo, text, or an identifying mark, onto an image to indicate ownership, protect copyright, or add branding."
-											},
-											"status": "Created",
-											"code": 201,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n  \"success\": true,\n  \"message\": \"Image watermarking completed.\",\n  \"watermarked_image_url\": \"https://example.com/images/watermarked_image.jpg\"\n}"
-										},
-										{
-											"id": "86ad5da1-40f2-4abf-874f-a944c4054487",
-											"name": "200",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Content-Type",
-														"name": "Content-Type",
-														"value": "application/json",
-														"type": "text"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\",\r\n  \"watermark_text\": \"Confidential\", \r\n  \"position\": \"bottom-right\"\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/watermark",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"watermark"
-													]
-												},
-												"description": "This request allows users to upload the image that needs to be processed."
-											},
-											"status": "OK",
-											"code": 200,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n  \"success\": true,\n  \"message\": \"Image watermarking completed.\",\n  \"watermarked_image_url\": \"https://example.com/images/watermarked_image.jpg\"\n}"
-										},
-										{
-											"id": "5479546d-c34d-43e9-bb10-3e71ce0af1ba",
-											"name": "400",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Content-Type",
-														"name": "Content-Type",
-														"value": "application/json",
-														"type": "text"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\",\r\n  \"watermark_text\": \"\", \r\n  \"position\": \"bottom-right\"\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/watermark",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"watermark"
-													]
-												},
-												"description": "This request allows users to upload the image that needs to be processed."
-											},
-											"status": "Request error",
-											"code": 400,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"code\": \"string\",\n    \"message\": \"watermark reguired\"\n}"
-										},
-										{
-											"id": "02e6acba-aa9d-406c-9a3e-ac60ed787d1a",
-											"name": "401",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Content-Type",
-														"name": "Content-Type",
-														"value": "application/json",
-														"type": "text"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\",\r\n  \"watermark_text\": \"Confidential\", \r\n  \"position\": \"bottom-right\"\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/watermark",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"watermark"
-													]
-												},
-												"description": "This request allows users to upload the image that needs to be processed."
-											},
-											"status": "Access unauthorized",
-											"code": 401,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
-										},
-										{
-											"id": "2fdad53a-8341-481a-9a2a-19ba0e836487",
-											"name": "403",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Content-Type",
-														"name": "Content-Type",
-														"value": "application/json",
-														"type": "text"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\",\r\n  \"watermark_text\": \"Confidential\", \r\n  \"position\": \"bottom-right\"\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/watermark",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"watermark"
-													]
-												},
-												"description": "This request allows users to upload the image that needs to be processed."
-											},
-											"status": "Access forbidden",
-											"code": 403,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
-										},
-										{
-											"id": "ce8894a7-cd14-49c5-96d3-fb2927b9676f",
-											"name": "404",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Content-Type",
-														"name": "Content-Type",
-														"value": "application/json",
-														"type": "text"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\",\r\n  \"watermark_text\": \"Confidential\", \r\n  \"position\": \"bottom-right\"\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/watermark",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"watermark"
-													]
-												},
-												"description": "This request allows users to upload the image that needs to be processed."
-											},
-											"status": "Resource not found",
-											"code": 404,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"code\": \"string\",\n    \"message\": \"image not found\"\n}"
-										},
-										{
-											"id": "252e97c7-bd58-43c3-a258-a114fc4edc14",
-											"name": "500",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Content-Type",
-														"name": "Content-Type",
-														"value": "application/json",
-														"type": "text"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"image_url\": \"https://example.com/images/image123.jpg\",\r\n  \"watermark_text\": \"Confidential\", \r\n  \"position\": \"bottom-right\"\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_url}}/watermark",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"watermark"
-													]
-												},
-												"description": "This request allows users to upload the image that needs to be processed."
-											},
-											"status": "Internal Server Error",
-											"code": 500,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
-										}
-									]
-								}
-							],
-							"id": "39e95309-3930-4516-8bf5-7cd5b427edb2",
-							"description": "This folder includes requests for various image processing operations, such as resizing, cropping, rotating, filtering, or manipulating images."
-						},
-						{
-							"name": "Download image",
-							"item": [
-								{
-									"name": "Download image",
-									"id": "640d0e4f-f5bd-460d-b0a5-22aae7cbfbc3",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
+									"id": "526de1db-a805-4080-b91e-c572b16ec396",
+									"name": "401",
+									"originalRequest": {
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{base_url}}/download",
+											"raw": "{{base_url}}/get",
 											"host": [
 												"{{base_url}}"
 											],
 											"path": [
-												"download"
+												"get"
 											]
 										},
-										"description": "Downloads an image from the given image URL."
+										"description": "Retrieve the details of a specific note by providing the note ID."
 									},
-									"response": [
+									"status": "Access unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
 										{
-											"id": "23ead6bc-092c-4d45-8861-b2d68635f944",
-											"name": "Download image",
-											"originalRequest": {
-												"method": "GET",
-												"header": [],
-												"url": {
-													"raw": "{{base_url}}/download",
-													"host": [
-														"{{base_url}}"
-													],
-													"path": [
-														"download"
-													]
-												},
-												"description": "Downloads an image from the given image URL."
-											},
-											"status": "OK",
-											"code": 200,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json",
-													"name": "Content-Type",
-													"description": "",
-													"type": "text"
-												}
-											],
-											"cookie": [],
-											"body": "{\n    \"status\": \"success\",\n    \"message\": \"Image downloaded successfully\",\n    \"image_url\": \"https://example.com/images/processed/image123_processed.jpg\"\n}"
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
 										}
-									]
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+								},
+								{
+									"id": "f6e53fa6-2f6b-4ecc-a1b1-f5ebfed6e23f",
+									"name": "403",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}/get",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"get"
+											]
+										},
+										"description": "Retrieve the details of a specific note by providing the note ID."
+									},
+									"status": "Acces forbidden",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+								},
+								{
+									"id": "2dcbc591-b9ab-4b06-bea8-3f9b2a488d04",
+									"name": "404",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}/get",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"get"
+											]
+										},
+										"description": "Retrieve the details of a specific note by providing the note ID."
+									},
+									"status": "Resource not found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": \"string\",\n    \"message\": \"there is no image\"\n}"
+								},
+								{
+									"id": "d52df51a-97e3-4b6e-84c8-d4e289c9c8b5",
+									"name": "500",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}/get",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"get"
+											]
+										},
+										"description": "Retrieve the details of a specific note by providing the note ID."
+									},
+									"status": "internal server error",
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
 								}
-							],
-							"id": "eeb6b3b1-42f4-41e9-a55e-f18e8b13270f",
-							"description": "This folder contains a request that can download an image from a specified URL or retrieve an image that the API has processed."
+							]
 						}
 					],
 					"id": "ef367228-c76a-4655-b5c4-e2e5881413a8"
@@ -7603,7 +6337,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"plateNumber\": \"BI7882C\",\n    \"carMark\": \"Porche\",\n    \"author\": \"Jan Wielki\"\n}",
+									"raw": "{\n    \"sessionId\": \"333-123-2133-123\",\n    \"registrationNumber\": \"BI7882C\",\n    \"carMark\": \"Porche\",\n    \"carColor\" : \"Black\", \n    \"long\" : \"52.12345.3\", \n    \"latitiude\": \"18.123\",\n    \"speed\" : \"300km/h\"\n    }",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -7634,7 +6368,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"id\": \"1\",\n    \"registrationNumber\": \"ABC1234\",\n    \"carMark\": \"Porche\",\n    \"userName\": \"WilekiJOHN\",\n    \"createdAt\": \"2023-05-18T16:20:00Z\",\n    \"updatedAt\": \"2023-05-18T16:20:00Z\"\n}"
+							"body": "{\n    \"id\": \"1\",\n    \"registrationNumber\": \"ABC1234\",\n    \"carMark\": \"Porche\",\n    \"color\" : \"Black\",\n    \"createdAt\": \"2023-05-18T16:20:00Z\",\n    \"updatedAt\": \"2023-05-18T16:20:00Z\"\n}"
 						},
 						{
 							"id": "296d5ebb-2903-4aaf-8e3f-e0241b8b1a92",
@@ -8174,7 +6908,10 @@
 					"name": "Delete vehicles",
 					"id": "1cb6ecb3-02c3-486c-9e57-3453bb4677a5",
 					"protocolProfileBehavior": {
-						"disableBodyPruning": true
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept-encoding": true
+						}
 					},
 					"request": {
 						"method": "DELETE",
@@ -8203,7 +6940,13 @@
 							"name": "200",
 							"originalRequest": {
 								"method": "DELETE",
-								"header": [],
+								"header": [
+									{
+										"key": "sessionId",
+										"value": "333-123-2133-123",
+										"type": "text"
+									}
+								],
 								"url": {
 									"raw": "{{base_url}}/vehicles/:Id",
 									"host": [
@@ -8219,8 +6962,7 @@
 											"value": null
 										}
 									]
-								},
-								"description": "Delete a specific note identified by its note ID."
+								}
 							},
 							"status": "OK",
 							"code": 200,
@@ -8350,6 +7092,7 @@
 							"id": "66cbbf74-ded8-4025-948e-61194faa7a56",
 							"name": "404",
 							"originalRequest": {
+								"method": "GET",
 								"header": [],
 								"url": {
 									"raw": "{{base_url}}/vehicles/:Id",
@@ -8425,63 +7168,6 @@
 					]
 				},
 				{
-					"name": "Get all sources",
-					"id": "7887d617-a5ce-4412-b136-66a3b38222f0",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{base_url}}/vehicles/sources",
-							"host": [
-								"{{base_url}}"
-							],
-							"path": [
-								"vehicles",
-								"sources"
-							]
-						},
-						"description": "Get all news sources."
-					},
-					"response": [
-						{
-							"id": "55027d4e-5aa8-41ba-8637-c5a78da3adea",
-							"name": "Get all sources",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{base_url}}/vehicles/sources",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"vehicles",
-										"sources"
-									]
-								},
-								"description": "Get all news sources."
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json",
-									"name": "Content-Type",
-									"description": "",
-									"type": "text"
-								}
-							],
-							"cookie": [],
-							"body": "{\n  \"sources\": [\n    {\n      \"id\": \"source-1\",\n      \"name\": \"CNN\",\n      \"description\": \"Cable News Network\",\n      \"url\": \"https://www.cnn.com\"\n    },\n    {\n      \"id\": \"source-2\",\n      \"name\": \"BBC News\",\n      \"description\": \"British Broadcasting Corporation\",\n      \"url\": \"https://www.bbc.co.uk/news\"\n    }\n  ]\n}\n"
-						}
-					]
-				},
-				{
 					"name": "Filter vehicles",
 					"id": "836743c3-d99e-4bf6-91f3-9973727d4439",
 					"protocolProfileBehavior": {
@@ -8524,9 +7210,15 @@
 							"name": "Filter news",
 							"originalRequest": {
 								"method": "GET",
-								"header": [],
+								"header": [
+									{
+										"key": "sessionId",
+										"value": "333-123-2133-123",
+										"type": "text"
+									}
+								],
 								"url": {
-									"raw": "{{base_url}}/vehicles?date=2023-06-01T09:00:00&title=Breaking News&author=John Doe",
+									"raw": "{{base_url}}/vehicles?form=2023-06-01T09:00:00&to=2023-06-01T09:00:00&title=FAST PORSHE",
 									"host": [
 										"{{base_url}}"
 									],
@@ -8535,19 +7227,19 @@
 									],
 									"query": [
 										{
-											"key": "date",
+											"key": "form",
+											"value": "2023-06-01T09:00:00",
+											"description": "The date in the format \"YYYY-MM-DD\" to filter by."
+										},
+										{
+											"key": "to",
 											"value": "2023-06-01T09:00:00",
 											"description": "The date in the format \"YYYY-MM-DD\" to filter by."
 										},
 										{
 											"key": "title",
-											"value": "Breaking News",
+											"value": "FAST PORSHE",
 											"description": "The title of the article to filter by."
-										},
-										{
-											"key": "author",
-											"value": "John Doe",
-											"description": "The name of the author to filter by."
 										}
 									]
 								},
@@ -8567,79 +7259,6 @@
 							],
 							"cookie": [],
 							"body": "{\n  \"articles\": [\n    {\n      \"id\": \"article-1\",\n      \"title\": \"Breaking News\",\n      \"description\": \"This is a breaking news article.\",\n      \"author\": \"John Doe\",\n      \"published_at\": \"2023-06-01T09:00:00\",\n      \"content\": \"This is the content of the breaking news article.\"\n    }\n  ]\n}\n"
-						}
-					]
-				},
-				{
-					"name": "Get related vehicles",
-					"id": "b2782526-5d26-41c7-b867-6c47b693ee31",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{base_url}}/vehicles/:articleId/related",
-							"host": [
-								"{{base_url}}"
-							],
-							"path": [
-								"vehicles",
-								":articleId",
-								"related"
-							],
-							"variable": [
-								{
-									"key": "articleId",
-									"value": null,
-									"description": "The unique identifier of the article to retrieve related news for."
-								}
-							]
-						},
-						"description": "Get related news articles based on a given article."
-					},
-					"response": [
-						{
-							"id": "138749f2-9ceb-4d59-9955-81ad8ec5a8ca",
-							"name": "Get related news",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{base_url}}/vehicles/:articleId/related",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"vehicles",
-										":articleId",
-										"related"
-									],
-									"variable": [
-										{
-											"key": "articleId",
-											"value": null,
-											"description": "The unique identifier of the article to retrieve related news for."
-										}
-									]
-								},
-								"description": "Get related news articles based on a given article."
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json",
-									"name": "Content-Type",
-									"description": "",
-									"type": "text"
-								}
-							],
-							"cookie": [],
-							"body": "{\n  \"articles\": [\n    {\n      \"id\": \"related-1\",\n      \"title\": \"Related Article 1\",\n      \"description\": \"This is a related article 1.\",\n      \"author\": \"John Doe\",\n      \"published_at\": \"2023-06-01T09:30:00\",\n      \"content\": \"This is the content of the related article 1.\"\n    },\n    {\n      \"id\": \"related-2\",\n      \"title\": \"Related Article 2\",\n      \"description\": \"This is a related article 2.\",\n      \"author\": \"Jane Smith\",\n      \"published_at\": \"2023-06-01T11:00:00\",\n      \"content\": \"This is the content of the related article 2.\"\n    }\n  ]\n}\n"
 						}
 					]
 				}
