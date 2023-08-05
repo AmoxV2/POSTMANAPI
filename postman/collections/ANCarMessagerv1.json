@@ -5909,7 +5909,7 @@
 					"response": [
 						{
 							"id": "dafb668d-abb2-4dfa-9124-d29fd6de446b",
-							"name": "200 Copy",
+							"name": "200",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
@@ -5974,7 +5974,7 @@
 						},
 						{
 							"id": "f46daddf-5ac9-42dc-a22e-e5cd6fc1ad6d",
-							"name": "400 Copy",
+							"name": "400",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
@@ -6039,7 +6039,7 @@
 						},
 						{
 							"id": "eef7ff82-ef49-4428-bcae-b65288e72316",
-							"name": "401 Copy",
+							"name": "401",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
@@ -6104,7 +6104,7 @@
 						},
 						{
 							"id": "e1bc16b1-a332-4831-8730-e9445d76e56c",
-							"name": "403 Copy",
+							"name": "403",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
@@ -6169,7 +6169,7 @@
 						},
 						{
 							"id": "ab2081ac-2a84-435a-9e86-173a91389575",
-							"name": "404 Copy",
+							"name": "404",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
@@ -6234,7 +6234,7 @@
 						},
 						{
 							"id": "3f751269-83ad-4d03-9b4c-3e43f41b2f76",
-							"name": "500 Copy",
+							"name": "500",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
@@ -7259,6 +7259,373 @@
 							],
 							"cookie": [],
 							"body": "{\n  \"articles\": [\n    {\n      \"id\": \"article-1\",\n      \"title\": \"Breaking News\",\n      \"description\": \"This is a breaking news article.\",\n      \"author\": \"John Doe\",\n      \"published_at\": \"2023-06-01T09:00:00\",\n      \"content\": \"This is the content of the breaking news article.\"\n    }\n  ]\n}\n"
+						},
+						{
+							"id": "82b54683-2660-40af-a3d9-f512022cb6af",
+							"name": "200",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "sessionId",
+										"value": "333-123-2133-123",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/vehicles/:Id?form=2023-06-01T09:00:00&to=2023-06-01T09:00:00&title=FAST PORSHE",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"vehicles",
+										":Id"
+									],
+									"query": [
+										{
+											"key": "form",
+											"value": "2023-06-01T09:00:00"
+										},
+										{
+											"key": "to",
+											"value": "2023-06-01T09:00:00"
+										},
+										{
+											"key": "title",
+											"value": "FAST PORSHE"
+										}
+									],
+									"variable": [
+										{
+											"key": "Id",
+											"value": null
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"name": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Vehicles\": [\n        {\n            \n            \"id\": \"1\",\n            \"registrationNumber\": \"BI7882C\" ,\n            \"carMark\": \"Porche\",\n            \"author\": \"Jan Wielki\",\n            \"published_at\": \"2023-06-01T09:00:00\"\n            \n        },\n        {\n            \"id\": \"2\",\n            \"registrationNumber\": \"BI7882D\" ,\n            \"carMark\": \"Mclaren\",\n            \"author\": \"Jan Mały\",\n            \"published_at\": \"2023-06-01T09:00:00\"\n        }\n    ]\n}"
+						},
+						{
+							"id": "6944b5fb-93e3-4fe8-a89b-440173902451",
+							"name": "400",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "sessionId",
+										"value": "333-123-2133-123",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/vehicles/:Id?form=2023-06-01T09:00:00&to=2023-06-01T09:00:00&title=FAST PORSHE",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"vehicles",
+										":Id"
+									],
+									"query": [
+										{
+											"key": "form",
+											"value": "2023-06-01T09:00:00",
+											"type": "text"
+										},
+										{
+											"key": "to",
+											"value": "2023-06-01T09:00:00",
+											"type": "text"
+										},
+										{
+											"key": "title",
+											"value": "FAST PORSHE",
+											"type": "text"
+										}
+									],
+									"variable": [
+										{
+											"key": "Id",
+											"value": null
+										}
+									]
+								},
+								"description": "Delete a specific note identified by its note ID."
+							},
+							"status": "Reguest error",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+						},
+						{
+							"id": "78d9bc56-65a0-4108-9afa-2650801feb8f",
+							"name": "401",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "sessionId",
+										"value": "333-123-2133-123",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/vehicles/:Id?form=2023-06-01T09:00:00&to=2023-06-01T09:00:00&title=FAST PORSHE",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"vehicles",
+										":Id"
+									],
+									"query": [
+										{
+											"key": "form",
+											"value": "2023-06-01T09:00:00",
+											"type": "text"
+										},
+										{
+											"key": "to",
+											"value": "2023-06-01T09:00:00",
+											"type": "text"
+										},
+										{
+											"key": "title",
+											"value": "FAST PORSHE",
+											"type": "text"
+										}
+									],
+									"variable": [
+										{
+											"key": "Id",
+											"value": null
+										}
+									]
+								},
+								"description": "Delete a specific note identified by its note ID."
+							},
+							"status": "Access unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+						},
+						{
+							"id": "ac21061d-b5d6-42bd-a511-1f8614d2cd7e",
+							"name": "403",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "sessionId",
+										"value": "333-123-2133-123",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/vehicles/:Id?form=2023-06-01T09:00:00&to=2023-06-01T09:00:00&title=FAST PORSHE",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"vehicles",
+										":Id"
+									],
+									"query": [
+										{
+											"key": "form",
+											"value": "2023-06-01T09:00:00",
+											"type": "text"
+										},
+										{
+											"key": "to",
+											"value": "2023-06-01T09:00:00",
+											"type": "text"
+										},
+										{
+											"key": "title",
+											"value": "FAST PORSHE",
+											"type": "text"
+										}
+									],
+									"variable": [
+										{
+											"key": "Id",
+											"value": null
+										}
+									]
+								},
+								"description": "Delete a specific note identified by its note ID."
+							},
+							"status": "Access forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+						},
+						{
+							"id": "497c2c6e-868e-4d51-9b86-8dbd693b7385",
+							"name": "404",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "sessionId",
+										"value": "333-123-2133-123",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/vehicles/:Id?form=2023-06-01T09:00:00&to=2023-06-01T09:00:00&title=FAST PORSHE",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"vehicles",
+										":Id"
+									],
+									"query": [
+										{
+											"key": "form",
+											"value": "2023-06-01T09:00:00",
+											"type": "text"
+										},
+										{
+											"key": "to",
+											"value": "2023-06-01T09:00:00",
+											"type": "text"
+										},
+										{
+											"key": "title",
+											"value": "FAST PORSHE",
+											"type": "text"
+										}
+									],
+									"variable": [
+										{
+											"key": "Id",
+											"value": null
+										}
+									]
+								}
+							},
+							"status": "Resource not found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
+						},
+						{
+							"id": "1ae1e712-868f-4842-98d4-f2f4099370b3",
+							"name": "500",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "sessionId",
+										"value": "333-123-2133-123",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/vehicles/:Id?form=2023-06-01T09:00:00&to=2023-06-01T09:00:00&title=FAST PORSHE",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"vehicles",
+										":Id"
+									],
+									"query": [
+										{
+											"key": "form",
+											"value": "2023-06-01T09:00:00",
+											"type": "text"
+										},
+										{
+											"key": "to",
+											"value": "2023-06-01T09:00:00",
+											"type": "text"
+										},
+										{
+											"key": "title",
+											"value": "FAST PORSHE",
+											"type": "text"
+										}
+									],
+									"variable": [
+										{
+											"key": "Id",
+											"value": null
+										}
+									]
+								},
+								"description": "Delete a specific note identified by its note ID."
+							},
+							"status": "Internal server error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
 						}
 					]
 				}
