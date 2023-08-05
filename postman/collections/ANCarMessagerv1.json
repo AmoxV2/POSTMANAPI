@@ -7261,7 +7261,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"Vehicles\": [\n        {\n            \n            \"id\": \"1\",\n            \"registrationNumber\": \"BI7882C\" ,\n            \"carMark\": \"Porche\",\n            \"author\": \"Jan Wielki\",\n            \"published_at\": \"2023-06-01T09:00:00\"\n            \n        },\n        {\n            \"id\": \"2\",\n            \"registrationNumber\": \"BI7882D\" ,\n            \"carMark\": \"Mclaren\",\n            \"author\": \"Jan Mały\",\n            \"published_at\": \"2023-06-01T09:00:00\"\n        }\n    ]\n}\n"
+							"body": "{\n    \"Vehicles\": [\n        {\n            \n            \"id\": \"1\",\n            \"registrationNumber\": \"BI7882C\" ,\n            \"carMark\": \"Porche\",\n            \"author\": \"Jan Wiealki\",\n            \"published_at\": \"2023-06-01T09:00:00\"\n            \n        },\n        {\n            \"id\": \"2\",\n            \"registrationNumber\": \"BI7882D\" ,\n            \"carMark\": \"Mclaren\",\n            \"author\": \"Jan Mały\",\n            \"published_at\": \"2023-06-01T09:00:00\"\n        }\n    ]\n}\n"
 						},
 						{
 							"id": "6944b5fb-93e3-4fe8-a89b-440173902451",
