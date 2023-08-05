@@ -7333,7 +7333,10 @@
 										"value": "333-123-2133-123",
 										"type": "text"
 									}
-								]
+								],
+								"url": {
+									"raw": ""
+								}
 							},
 							"status": "Access unauthorized",
 							"code": 401,
@@ -7361,7 +7364,10 @@
 										"value": "333-123-2133-123",
 										"type": "text"
 									}
-								]
+								],
+								"url": {
+									"raw": ""
+								}
 							},
 							"status": "Access forbidden",
 							"code": 403,
