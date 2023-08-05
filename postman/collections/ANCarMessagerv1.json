@@ -6622,7 +6622,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"plateNumber\": \"BI7882C\",\n    \"carMark\": \"Porche\",\n    \"author\": \"Jan Wielki\"\n}",
+									"raw": "{\n    \"sessionId\": \"333-123-2133-123\",\n    \"registrationNumber\": \"BI7882C\",\n    \"carMark\": \"Porche\",\n    \"carColor\": \"Black\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -6670,7 +6670,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"sessionId\": \"333-123-2133-123\",\n    \"registrationNumber\": \"\",\n    \"text\": \"good driver\",\n    \"starsRating\": 5\n}",
+									"raw": "{\n    \"sessionId\": \"333-123-2133-123\",\n    \"registrationNumber\": \"BI7882C\",\n    \"carMark\": \"Porche\",\n    \"carColor\": \"Black\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -6718,7 +6718,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"sessionId\": \"333-123-2133-123\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\",\n    \"starsRating\": 5\n}",
+									"raw": "{\n    \"sessionId\": \"333-123-2133-123\",\n    \"registrationNumber\": \"BI7882C\",\n    \"carMark\": \"Porche\",\n    \"carColor\": \"Black\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -6766,7 +6766,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"sessionId\": \"333-123-2133-123\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\",\n    \"starsRating\": 5\n}",
+									"raw": "{\n    \"sessionId\": \"333-123-2133-123\",\n    \"registrationNumber\": \"BI7882C\",\n    \"carMark\": \"Porche\",\n    \"carColor\": \"Black\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -6814,7 +6814,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"sessionId\": \"333-123-2133-123\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\",\n    \"starsRating\": 5\n}",
+									"raw": "{\n    \"sessionId\": \"333-123-2133-123\",\n    \"registrationNumber\": \"BI7882C\",\n    \"carMark\": \"Porche\",\n    \"carColor\": \"Black\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -6862,7 +6862,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"sessionId\": \"333-123-2133-123\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\",\n    \"starsRating\": 5\n}",
+									"raw": "{\n    \"sessionId\": \"333-123-2133-123\",\n    \"registrationNumber\": \"BI7882C\",\n    \"carMark\": \"Porche\",\n    \"carColor\": \"Black\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -7206,65 +7206,10 @@
 					},
 					"response": [
 						{
-							"id": "baefac39-3bd6-4e79-802d-0c508d82ea48",
-							"name": "Filter news",
-							"originalRequest": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "sessionId",
-										"value": "333-123-2133-123",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "{{base_url}}/vehicles?form=2023-06-01T09:00:00&to=2023-06-01T09:00:00&title=FAST PORSHE",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"vehicles"
-									],
-									"query": [
-										{
-											"key": "form",
-											"value": "2023-06-01T09:00:00",
-											"description": "The date in the format \"YYYY-MM-DD\" to filter by."
-										},
-										{
-											"key": "to",
-											"value": "2023-06-01T09:00:00",
-											"description": "The date in the format \"YYYY-MM-DD\" to filter by."
-										},
-										{
-											"key": "title",
-											"value": "FAST PORSHE",
-											"description": "The title of the article to filter by."
-										}
-									]
-								},
-								"description": "Get news articles filtered by various properties."
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json",
-									"name": "Content-Type",
-									"description": "",
-									"type": "text"
-								}
-							],
-							"cookie": [],
-							"body": "{\n  \"articles\": [\n    {\n      \"id\": \"article-1\",\n      \"title\": \"Breaking News\",\n      \"description\": \"This is a breaking news article.\",\n      \"author\": \"John Doe\",\n      \"published_at\": \"2023-06-01T09:00:00\",\n      \"content\": \"This is the content of the breaking news article.\"\n    }\n  ]\n}\n"
-						},
-						{
 							"id": "82b54683-2660-40af-a3d9-f512022cb6af",
 							"name": "200",
 							"originalRequest": {
-								"method": "DELETE",
+								"method": "GET",
 								"header": [
 									{
 										"key": "sessionId",
@@ -7316,13 +7261,13 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"Vehicles\": [\n        {\n            \n            \"id\": \"1\",\n            \"registrationNumber\": \"BI7882C\" ,\n            \"carMark\": \"Porche\",\n            \"author\": \"Jan Wielki\",\n            \"published_at\": \"2023-06-01T09:00:00\"\n            \n        },\n        {\n            \"id\": \"2\",\n            \"registrationNumber\": \"BI7882D\" ,\n            \"carMark\": \"Mclaren\",\n            \"author\": \"Jan Mały\",\n            \"published_at\": \"2023-06-01T09:00:00\"\n        }\n    ]\n}"
+							"body": "{\n    \"Vehicles\": [\n        {\n            \n            \"id\": \"1\",\n            \"registrationNumber\": \"BI7882C\" ,\n            \"carMark\": \"Porche\",\n            \"author\": \"Jan Wielki\",\n            \"published_at\": \"2023-06-01T09:00:00\"\n            \n        },\n        {\n            \"id\": \"2\",\n            \"registrationNumber\": \"BI7882D\" ,\n            \"carMark\": \"Mclaren\",\n            \"author\": \"Jan Mały\",\n            \"published_at\": \"2023-06-01T09:00:00\"\n        }\n    ]\n}\n"
 						},
 						{
 							"id": "6944b5fb-93e3-4fe8-a89b-440173902451",
 							"name": "400",
 							"originalRequest": {
-								"method": "DELETE",
+								"method": "GET",
 								"header": [
 									{
 										"key": "sessionId",
@@ -7342,18 +7287,15 @@
 									"query": [
 										{
 											"key": "form",
-											"value": "2023-06-01T09:00:00",
-											"type": "text"
+											"value": "2023-06-01T09:00:00"
 										},
 										{
 											"key": "to",
-											"value": "2023-06-01T09:00:00",
-											"type": "text"
+											"value": "2023-06-01T09:00:00"
 										},
 										{
 											"key": "title",
-											"value": "FAST PORSHE",
-											"type": "text"
+											"value": "FAST PORSHE"
 										}
 									],
 									"variable": [
@@ -7381,51 +7323,17 @@
 							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
 						},
 						{
-							"id": "78d9bc56-65a0-4108-9afa-2650801feb8f",
+							"id": "c59dd31a-794b-44a1-b101-0cea489906b4",
 							"name": "401",
 							"originalRequest": {
-								"method": "DELETE",
+								"method": "GET",
 								"header": [
 									{
 										"key": "sessionId",
 										"value": "333-123-2133-123",
 										"type": "text"
 									}
-								],
-								"url": {
-									"raw": "{{base_url}}/vehicles/:Id?form=2023-06-01T09:00:00&to=2023-06-01T09:00:00&title=FAST PORSHE",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"vehicles",
-										":Id"
-									],
-									"query": [
-										{
-											"key": "form",
-											"value": "2023-06-01T09:00:00",
-											"type": "text"
-										},
-										{
-											"key": "to",
-											"value": "2023-06-01T09:00:00",
-											"type": "text"
-										},
-										{
-											"key": "title",
-											"value": "FAST PORSHE",
-											"type": "text"
-										}
-									],
-									"variable": [
-										{
-											"key": "Id",
-											"value": null
-										}
-									]
-								},
-								"description": "Delete a specific note identified by its note ID."
+								]
 							},
 							"status": "Access unauthorized",
 							"code": 401,
@@ -7443,51 +7351,17 @@
 							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
 						},
 						{
-							"id": "ac21061d-b5d6-42bd-a511-1f8614d2cd7e",
+							"id": "a5dc31e5-76e5-4d10-a4ed-8cde2d3228f0",
 							"name": "403",
 							"originalRequest": {
-								"method": "DELETE",
+								"method": "GET",
 								"header": [
 									{
 										"key": "sessionId",
 										"value": "333-123-2133-123",
 										"type": "text"
 									}
-								],
-								"url": {
-									"raw": "{{base_url}}/vehicles/:Id?form=2023-06-01T09:00:00&to=2023-06-01T09:00:00&title=FAST PORSHE",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"vehicles",
-										":Id"
-									],
-									"query": [
-										{
-											"key": "form",
-											"value": "2023-06-01T09:00:00",
-											"type": "text"
-										},
-										{
-											"key": "to",
-											"value": "2023-06-01T09:00:00",
-											"type": "text"
-										},
-										{
-											"key": "title",
-											"value": "FAST PORSHE",
-											"type": "text"
-										}
-									],
-									"variable": [
-										{
-											"key": "Id",
-											"value": null
-										}
-									]
-								},
-								"description": "Delete a specific note identified by its note ID."
+								]
 							},
 							"status": "Access forbidden",
 							"code": 403,
@@ -7569,7 +7443,7 @@
 							"id": "1ae1e712-868f-4842-98d4-f2f4099370b3",
 							"name": "500",
 							"originalRequest": {
-								"method": "DELETE",
+								"method": "GET",
 								"header": [
 									{
 										"key": "sessionId",
@@ -7589,18 +7463,15 @@
 									"query": [
 										{
 											"key": "form",
-											"value": "2023-06-01T09:00:00",
-											"type": "text"
+											"value": "2023-06-01T09:00:00"
 										},
 										{
 											"key": "to",
-											"value": "2023-06-01T09:00:00",
-											"type": "text"
+											"value": "2023-06-01T09:00:00"
 										},
 										{
 											"key": "title",
-											"value": "FAST PORSHE",
-											"type": "text"
+											"value": "FAST PORSHE"
 										}
 									],
 									"variable": [
