@@ -5509,377 +5509,6 @@
 					"id": "ef367228-c76a-4655-b5c4-e2e5881413a8"
 				},
 				{
-					"name": "Get all vehicles",
-					"id": "6ffc2176-1aa9-400a-a4d4-ddca9a610de8",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{base_url}}/vehicles",
-							"host": [
-								"{{base_url}}"
-							],
-							"path": [
-								"vehicles"
-							]
-						},
-						"description": "Get all news articles."
-					},
-					"response": [
-						{
-							"id": "75159da5-efb3-454a-af9b-738e73d27026",
-							"name": "200",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"id\": 4\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{base_url}}/vehicles",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"vehicles"
-									]
-								},
-								"description": "This request lets users view their profiles."
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Date",
-									"value": "Fri, 12 May 2023 09:18:33 GMT"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "150"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "x-powered-by",
-									"value": "Express"
-								},
-								{
-									"key": "etag",
-									"value": "W/\"96-VPiQpM3iFgWueczgIStnyQNg+sM\""
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"Vechicles\": [\n        {\n            \"id\": \"1\",\n            \"registrationNumber\": \"BI7882C\" ,\n            \"carMark\": \"Porche\",\n            \"author\": \"Jan Wielki\",\n            \"published_at\": \"2023-06-01T09:00:00\"\n        },\n        {\n              \"id\": \"2\",\n            \"registrationNumber\": \"BI7092A\" ,\n            \"carMark\": \"Mclaren\",\n            \"author\": \"Marek Konopny\",\n            \"published_at\": \"2023-06-01T09:00:00\"\n        }\n    ]\n}"
-						},
-						{
-							"id": "b8ee8ac6-79d1-41f0-9abc-ae1a36b1779a",
-							"name": "400",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"id\": 4\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{base_url}}/vehicles",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"vehicles"
-									]
-								},
-								"description": "This request lets users view their profiles."
-							},
-							"status": "Reguest error",
-							"code": 400,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Date",
-									"value": "Fri, 12 May 2023 09:18:07 GMT"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "80"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "x-powered-by",
-									"value": "Express"
-								},
-								{
-									"key": "etag",
-									"value": "W/\"50-pF7L2BUdQsooflNE6rUz8FD5wA8\""
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
-						},
-						{
-							"id": "41350793-c43b-4f6e-a03a-c02faa90d672",
-							"name": "401",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"id\": 4\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{base_url}}/vehicles",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"vehicles"
-									]
-								},
-								"description": "This request lets users view their profiles."
-							},
-							"status": "Access unauthorized",
-							"code": 401,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Date",
-									"value": "Fri, 12 May 2023 09:18:07 GMT"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "80"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "x-powered-by",
-									"value": "Express"
-								},
-								{
-									"key": "etag",
-									"value": "W/\"50-pF7L2BUdQsooflNE6rUz8FD5wA8\""
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
-						},
-						{
-							"id": "0d441bf1-23f1-438f-ae48-99e738d61809",
-							"name": "403",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"id\": 4\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{base_url}}/vehicles",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"vehicles"
-									]
-								},
-								"description": "This request lets users view their profiles."
-							},
-							"status": "Access forbidden",
-							"code": 403,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Date",
-									"value": "Fri, 12 May 2023 09:18:07 GMT"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "80"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "x-powered-by",
-									"value": "Express"
-								},
-								{
-									"key": "etag",
-									"value": "W/\"50-pF7L2BUdQsooflNE6rUz8FD5wA8\""
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
-						},
-						{
-							"id": "f49887e2-5127-497b-a6b0-f87507f2e09f",
-							"name": "404",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"id\": 4\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{base_url}}/vehicles",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"vehicles"
-									]
-								},
-								"description": "This request lets users view their profiles."
-							},
-							"status": "Resource not found",
-							"code": 404,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Date",
-									"value": "Fri, 12 May 2023 09:18:07 GMT"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "80"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "x-powered-by",
-									"value": "Express"
-								},
-								{
-									"key": "etag",
-									"value": "W/\"50-pF7L2BUdQsooflNE6rUz8FD5wA8\""
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
-						},
-						{
-							"id": "537181d5-9c59-446d-8f6e-c6e47a2a29fa",
-							"name": "500",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"id\": 4\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{base_url}}/vehicles",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"vehicles"
-									]
-								},
-								"description": "This request lets users view their profiles."
-							},
-							"status": "Internal Server Error",
-							"code": 500,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Date",
-									"value": "Fri, 12 May 2023 09:18:07 GMT"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "80"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "x-powered-by",
-									"value": "Express"
-								},
-								{
-									"key": "etag",
-									"value": "W/\"50-pF7L2BUdQsooflNE6rUz8FD5wA8\""
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
-						}
-					]
-				},
-				{
 					"name": "Get vehicles by ID",
 					"id": "0075156d-8a19-49f5-80ea-47b3a0055ed6",
 					"protocolProfileBehavior": {
@@ -5915,7 +5544,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"id\": 4\r\n}",
+									"raw": "",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -5923,18 +5552,21 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/vehicles/:Id",
+									"raw": "{{base_url}}/vehicles?id=100&sessionId=123-456-789",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
-										"vehicles",
-										":Id"
+										"vehicles"
 									],
-									"variable": [
+									"query": [
 										{
-											"key": "Id",
-											"value": null
+											"key": "id",
+											"value": "100"
+										},
+										{
+											"key": "sessionId",
+											"value": "123-456-789"
 										}
 									]
 								},
@@ -5980,7 +5612,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"id\": 4\r\n}",
+									"raw": "\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -5988,18 +5620,21 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/vehicles/:Id",
+									"raw": "{{base_url}}/vehicles?id=100&sessionId=123-456-789",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
-										"vehicles",
-										":Id"
+										"vehicles"
 									],
-									"variable": [
+									"query": [
 										{
-											"key": "Id",
-											"value": null
+											"key": "id",
+											"value": "100"
+										},
+										{
+											"key": "sessionId",
+											"value": "123-456-789"
 										}
 									]
 								},
@@ -6045,7 +5680,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"id\": 4\r\n}",
+									"raw": "",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -6053,18 +5688,21 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/vehicles/:Id",
+									"raw": "{{base_url}}/vehicles?id=100&sessionId=123-456-789",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
-										"vehicles",
-										":Id"
+										"vehicles"
 									],
-									"variable": [
+									"query": [
 										{
-											"key": "Id",
-											"value": null
+											"key": "id",
+											"value": "100"
+										},
+										{
+											"key": "sessionId",
+											"value": "123-456-789"
 										}
 									]
 								},
@@ -6110,7 +5748,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"id\": 4\r\n}",
+									"raw": "",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -6118,18 +5756,21 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/vehicles/:Id",
+									"raw": "{{base_url}}/vehicles?id=100&sessionId=123-456-789",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
-										"vehicles",
-										":Id"
+										"vehicles"
 									],
-									"variable": [
+									"query": [
 										{
-											"key": "Id",
-											"value": null
+											"key": "id",
+											"value": "100"
+										},
+										{
+											"key": "sessionId",
+											"value": "123-456-789"
 										}
 									]
 								},
@@ -6175,7 +5816,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"id\": 4\r\n}",
+									"raw": "",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -6183,18 +5824,21 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/vehicles/:Id",
+									"raw": "{{base_url}}/vehicles?id=100&sessionId=123-456-789",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
-										"vehicles",
-										":Id"
+										"vehicles"
 									],
-									"variable": [
+									"query": [
 										{
-											"key": "Id",
-											"value": null
+											"key": "id",
+											"value": "100"
+										},
+										{
+											"key": "sessionId",
+											"value": "123-456-789"
 										}
 									]
 								},
@@ -6240,7 +5884,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"id\": 4\r\n}",
+									"raw": "",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -6248,18 +5892,21 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/vehicles/:Id",
+									"raw": "{{base_url}}/vehicles?id=100&sessionId=123-456-789",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
-										"vehicles",
-										":Id"
+										"vehicles"
 									],
-									"variable": [
+									"query": [
 										{
-											"key": "Id",
-											"value": null
+											"key": "id",
+											"value": "100"
+										},
+										{
+											"key": "sessionId",
+											"value": "123-456-789"
 										}
 									]
 								},
@@ -6948,18 +6595,17 @@
 									}
 								],
 								"url": {
-									"raw": "{{base_url}}/vehicles/:Id",
+									"raw": "{{base_url}}/vehicles?id=100",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
-										"vehicles",
-										":Id"
+										"vehicles"
 									],
-									"variable": [
+									"query": [
 										{
-											"key": "Id",
-											"value": null
+											"key": "id",
+											"value": "100"
 										}
 									]
 								}
@@ -7522,12 +7168,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/search?q=shoes&page=1&limit=10&sort=title&order=descending",
+							"raw": "{{base_url}}/info?q=shoes&page=1&limit=10&sort=&sessionId=descending2",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
-								"search"
+								"info"
 							],
 							"query": [
 								{
@@ -7547,13 +7193,12 @@
 								},
 								{
 									"key": "sort",
-									"value": "title",
+									"value": "",
 									"description": "The sorting option for the results"
 								},
 								{
-									"key": "order",
-									"value": "descending",
-									"description": "The sorting order for the results"
+									"key": "sessionId",
+									"value": "descending2"
 								}
 							]
 						},
@@ -7567,38 +7212,33 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/search?q=shoes&page=1&limit=10&sort=title&order=descending",
+									"raw": "{{base_url}}/info?q=shoes&page=1&limit=10&sort=title&order=descending",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
-										"search"
+										"info"
 									],
 									"query": [
 										{
 											"key": "q",
-											"value": "shoes",
-											"description": "The search query string"
+											"value": "shoes"
 										},
 										{
 											"key": "page",
-											"value": "1",
-											"description": "The page number to retrieve"
+											"value": "1"
 										},
 										{
 											"key": "limit",
-											"value": "10",
-											"description": "The maximum number of results per page"
+											"value": "10"
 										},
 										{
 											"key": "sort",
-											"value": "title",
-											"description": "The sorting option for the results"
+											"value": "title"
 										},
 										{
 											"key": "order",
-											"value": "descending",
-											"description": "The sorting order for the results"
+											"value": "descending"
 										}
 									]
 								},
