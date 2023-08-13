@@ -5512,24 +5512,34 @@
 					"name": "Get vehicles by ID",
 					"id": "0075156d-8a19-49f5-80ea-47b3a0055ed6",
 					"protocolProfileBehavior": {
-						"disableBodyPruning": true
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"connection": true,
+							"accept-encoding": true,
+							"user-agent": true,
+							"accept": true,
+							"host": true
+						}
 					},
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/vehicles/:Id",
+							"raw": "{{base_url}}/vehicles?id=2&sessionId=123-456-789",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
-								"vehicles",
-								":Id"
+								"vehicles"
 							],
-							"variable": [
+							"query": [
 								{
-									"key": "Id",
-									"value": null
+									"key": "id",
+									"value": "2"
+								},
+								{
+									"key": "sessionId",
+									"value": "123-456-789"
 								}
 							]
 						},
@@ -5569,8 +5579,7 @@
 											"value": "123-456-789"
 										}
 									]
-								},
-								"description": "This request lets users view their profiles."
+								}
 							},
 							"status": "OK",
 							"code": 200,
@@ -5841,8 +5850,7 @@
 											"value": "123-456-789"
 										}
 									]
-								},
-								"description": "This request lets users view their profiles."
+								}
 							},
 							"status": "Resource not found",
 							"code": 404,
@@ -5965,12 +5973,24 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/vehicles",
+							"raw": "{{base_url}}/create?name=marek&age=35",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
-								"vehicles"
+								"create"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "marek",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "35",
+									"type": "text"
+								}
 							]
 						},
 						"description": "Create a news article."
