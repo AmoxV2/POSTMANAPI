@@ -384,8 +384,7 @@
 											"value": ""
 										}
 									]
-								},
-								"description": "Retrieve all notes."
+								}
 							},
 							"status": "OK",
 							"code": 200,
@@ -393,14 +392,14 @@
 							"header": [
 								{
 									"key": "Content-Type",
-									"value": "application/json",
 									"name": "Content-Type",
+									"value": "application/json",
 									"description": "",
 									"type": "text"
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"notes\": [\n    {\n    \"id\": \"1\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"good driver\",\n    \"starsRating\": 5,\n    \"userName\": \"cichyDzik\",\n    \"userTrust\":\"1\",\n    \"createdAt\": \"2023-05-18T16:20:00Z\",\n    \"updatedAt\": \"2023-05-18T16:20:00Z\"\n    \n},\n   {\n    \"id\": \"3\",\n    \"registrationNumber\": \"ABC1234\",\n    \"text\": \"The driver didn't stop at green arrow\",\n    \"starsRating\": 3,\n    \"userName\": null ,\n    \"userTrust\":\"3\",\n    \"createdAt\": \"2023-05-18T16:20:00Z\",\n    \"updatedAt\": \"2023-05-18T16:20:00Z\"\n}\n  ]\n}\n"
+							"body": "{\n    \"notes\": [\n        {\n            \"id\": \"1\",\n            \"registrationNumber\": \"ABC1234\",\n            \"text\": \"good driver\",\n            \"starsRating\": 5,\n            \"userName\": \"cichyDzik\",\n            \"userTrust\": \"1\",\n            \"createdAt\": \"2023-05-18T16:20:00Z\",\n            \"updatedAt\": \"2023-05-18T16:20:00Z\"\n        },\n        {\n            \"id\": \"3\",\n            \"registrationNumber\": \"ABC1234\",\n            \"text\": \"The driver didn't stop at green arrow\",\n            \"starsRating\": 3,\n            \"userName\": null,\n            \"userTrust\": \"3\",\n            \"createdAt\": \"2023-05-18T16:20:00Z\",\n            \"updatedAt\": \"2023-05-18T16:20:00Z\"\n        }\n    ]\n}"
 						},
 						{
 							"id": "c1e8a947-bf72-4528-aec3-3a7c06119ee1",
@@ -5525,17 +5524,17 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/vehicles?id=2&sessionId=123-456-789",
+							"raw": "{{base_url}}/vehicle?id=103&sessionId=123-456-789",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
-								"vehicles"
+								"vehicle"
 							],
 							"query": [
 								{
 									"key": "id",
-									"value": "2"
+									"value": "103"
 								},
 								{
 									"key": "sessionId",
@@ -5562,7 +5561,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/vehicles?id=100&sessionId=123-456-789",
+									"raw": "{{base_url}}/vehicles?sessionId=123-456-789&id=100",
 									"host": [
 										"{{base_url}}"
 									],
@@ -5571,15 +5570,16 @@
 									],
 									"query": [
 										{
-											"key": "id",
-											"value": "100"
-										},
-										{
 											"key": "sessionId",
 											"value": "123-456-789"
+										},
+										{
+											"key": "id",
+											"value": "100"
 										}
 									]
-								}
+								},
+								"description": "This request lets users view their profiles."
 							},
 							"status": "OK",
 							"code": 200,
@@ -5646,8 +5646,7 @@
 											"value": "123-456-789"
 										}
 									]
-								},
-								"description": "This request lets users view their profiles."
+								}
 							},
 							"status": "Reguest error",
 							"code": 400,
@@ -5714,8 +5713,7 @@
 											"value": "123-456-789"
 										}
 									]
-								},
-								"description": "This request lets users view their profiles."
+								}
 							},
 							"status": "Access unauthorized",
 							"code": 401,
@@ -5782,8 +5780,7 @@
 											"value": "123-456-789"
 										}
 									]
-								},
-								"description": "This request lets users view their profiles."
+								}
 							},
 							"status": "Access forbidden",
 							"code": 403,
@@ -5917,8 +5914,7 @@
 											"value": "123-456-789"
 										}
 									]
-								},
-								"description": "This request lets users view their profiles."
+								}
 							},
 							"status": "Internal Server Error",
 							"code": 500,
@@ -5965,7 +5961,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"title\": \"New Article\",\n  \"description\": \"This is a new article.\",\n  \"author\": \"John Doe\",\n  \"content\": \"This is the content of the new article.\"\n}\n",
+							"raw": "{\n    \"sessionId\": \"333-123-2133-123\",\n    \"registrationNumber\": \"BI7882C\",\n    \"carMark\": \"Porche\",\n    \"carColor\" : \"Black\", \n    \"long\" : \"52.12345.3\", \n    \"latitiude\": \"18.123\",\n    \"speed\" : \"300km/h\"\n    }\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -5973,24 +5969,12 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/create?name=marek&age=35",
+							"raw": "{{base_url}}/vehicle",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
-								"create"
-							],
-							"query": [
-								{
-									"key": "name",
-									"value": "marek",
-									"type": "text"
-								},
-								{
-									"key": "age",
-									"value": "35",
-									"type": "text"
-								}
+								"vehicle"
 							]
 						},
 						"description": "Create a news article."
@@ -7261,8 +7245,7 @@
 											"value": "descending"
 										}
 									]
-								},
-								"description": "Perform a search and retrieve results based on specified criteria such as limit, page number, sorting options."
+								}
 							},
 							"status": "OK",
 							"code": 200,
