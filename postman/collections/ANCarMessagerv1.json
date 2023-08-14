@@ -2376,6 +2376,7 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "6c185193-0a4a-4eb8-8161-3e66154da79b",
 										"exec": [
 											"pm.test(\"should have status code as 200\", function () {",
 											"    pm.response.to.have.status(200);",
@@ -2414,8 +2415,7 @@
 											"    pm.expect(tv4.validate(result, responseSchema)).to.be.true;",
 											"});"
 										],
-										"type": "text/javascript",
-										"id": "6c185193-0a4a-4eb8-8161-3e66154da79b"
+										"type": "text/javascript"
 									}
 								}
 							],
@@ -2431,7 +2431,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"id\": 4\r\n}",
+									"raw": "",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2439,7 +2439,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{url}}/user?sessionId=123-213-12321-312",
+									"raw": "{{url}}/user?sessionId=123-213-12321-312&id=4",
 									"host": [
 										"{{url}}"
 									],
@@ -2450,6 +2450,11 @@
 										{
 											"key": "sessionId",
 											"value": "123-213-12321-312"
+										},
+										{
+											"key": "id",
+											"value": "4",
+											"type": "text"
 										}
 									]
 								},
@@ -2464,7 +2469,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"id\": 4\r\n}",
+											"raw": "",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -2472,7 +2477,7 @@
 											}
 										},
 										"url": {
-											"raw": "{{url}}/user?sessionId=123-213-12321-312",
+											"raw": "{{url}}/user?sessionId=123-213-12321-312&id=4",
 											"host": [
 												"{{url}}"
 											],
@@ -2483,6 +2488,10 @@
 												{
 													"key": "sessionId",
 													"value": "123-213-12321-312"
+												},
+												{
+													"key": "id",
+													"value": "4"
 												}
 											]
 										},
@@ -2528,7 +2537,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"id\": 4\r\n}",
+											"raw": "",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -2536,7 +2545,7 @@
 											}
 										},
 										"url": {
-											"raw": "{{url}}/user?sessionId=123-213-12321-312",
+											"raw": "{{url}}/user?id=4",
 											"host": [
 												"{{url}}"
 											],
@@ -2546,7 +2555,12 @@
 											"query": [
 												{
 													"key": "sessionId",
-													"value": "123-213-12321-312"
+													"value": "123-213-12321-312",
+													"disabled": true
+												},
+												{
+													"key": "id",
+													"value": "4"
 												}
 											]
 										},
@@ -2592,7 +2606,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"id\": 4\r\n}",
+											"raw": "",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -2600,7 +2614,7 @@
 											}
 										},
 										"url": {
-											"raw": "{{url}}/user?sessionId=123-213-12321-312",
+											"raw": "{{url}}/user?sessionId=123-213-12321-312&id=4",
 											"host": [
 												"{{url}}"
 											],
@@ -2611,6 +2625,10 @@
 												{
 													"key": "sessionId",
 													"value": "123-213-12321-312"
+												},
+												{
+													"key": "id",
+													"value": "4"
 												}
 											]
 										},
@@ -2656,7 +2674,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"id\": 4\r\n}",
+											"raw": "",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -2664,7 +2682,7 @@
 											}
 										},
 										"url": {
-											"raw": "{{url}}/user?sessionId=123-213-12321-312",
+											"raw": "{{url}}/user?sessionId=123-213-12321-312&id=4",
 											"host": [
 												"{{url}}"
 											],
@@ -2675,6 +2693,10 @@
 												{
 													"key": "sessionId",
 													"value": "123-213-12321-312"
+												},
+												{
+													"key": "id",
+													"value": "4"
 												}
 											]
 										},
@@ -2720,7 +2742,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"id\": 4\r\n}",
+											"raw": "",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -2728,7 +2750,7 @@
 											}
 										},
 										"url": {
-											"raw": "{{url}}/user?sessionId=123-213-12321-312",
+											"raw": "{{url}}/user?sessionId=123-213-12321-312&id=1323124",
 											"host": [
 												"{{url}}"
 											],
@@ -2739,6 +2761,10 @@
 												{
 													"key": "sessionId",
 													"value": "123-213-12321-312"
+												},
+												{
+													"key": "id",
+													"value": "1323124"
 												}
 											]
 										},
@@ -2784,7 +2810,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"id\": 4\r\n}",
+											"raw": "",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -2792,7 +2818,7 @@
 											}
 										},
 										"url": {
-											"raw": "{{url}}/user?sessionId=123-213-12321-312",
+											"raw": "{{url}}/user?sessionId=123-213-12321-312&id=4",
 											"host": [
 												"{{url}}"
 											],
@@ -2803,6 +2829,10 @@
 												{
 													"key": "sessionId",
 													"value": "123-213-12321-312"
+												},
+												{
+													"key": "id",
+													"value": "4"
 												}
 											]
 										},
@@ -2951,7 +2981,7 @@
 											}
 										},
 										"url": {
-											"raw": "{{url}}/user?sessionId=",
+											"raw": "{{url}}/user?sessionId=1000",
 											"host": [
 												"{{url}}"
 											],
@@ -2961,7 +2991,7 @@
 											"query": [
 												{
 													"key": "sessionId",
-													"value": ""
+													"value": "1000"
 												}
 											]
 										},
@@ -3015,7 +3045,7 @@
 											}
 										},
 										"url": {
-											"raw": "{{url}}/user?sessionId=",
+											"raw": "{{url}}/user?sessionId=1000",
 											"host": [
 												"{{url}}"
 											],
@@ -3025,7 +3055,7 @@
 											"query": [
 												{
 													"key": "sessionId",
-													"value": ""
+													"value": "1000"
 												}
 											]
 										},
@@ -3079,7 +3109,7 @@
 											}
 										},
 										"url": {
-											"raw": "{{url}}/user?sessionId=",
+											"raw": "{{url}}/user",
 											"host": [
 												"{{url}}"
 											],
@@ -3089,7 +3119,8 @@
 											"query": [
 												{
 													"key": "sessionId",
-													"value": ""
+													"value": "",
+													"disabled": true
 												}
 											]
 										},
@@ -3143,7 +3174,7 @@
 											}
 										},
 										"url": {
-											"raw": "{{url}}/user?sessionId=",
+											"raw": "{{url}}/user?sessionId=1000",
 											"host": [
 												"{{url}}"
 											],
@@ -3153,7 +3184,7 @@
 											"query": [
 												{
 													"key": "sessionId",
-													"value": ""
+													"value": "1000"
 												}
 											]
 										},
@@ -3161,70 +3192,6 @@
 									},
 									"status": "Access forbidden",
 									"code": 403,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Date",
-											"value": "Fri, 12 May 2023 09:18:43 GMT"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json; charset=utf-8"
-										},
-										{
-											"key": "Content-Length",
-											"value": "150"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "x-powered-by",
-											"value": "Express"
-										},
-										{
-											"key": "etag",
-											"value": "W/\"96-VPiQpM3iFgWueczgIStnyQNg+sM\""
-										}
-									],
-									"cookie": [],
-									"body": "{\n    \"code\": \"string\",\n    \"message\": \"string\"\n}"
-								},
-								{
-									"id": "21d2be57-6867-4643-8bac-e29ed8dc0983",
-									"name": "404",
-									"originalRequest": {
-										"method": "PATCH",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n    \"age\": 33,\n    \"firstName\": \"Harry\"\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{url}}/user?sessionId=",
-											"host": [
-												"{{url}}"
-											],
-											"path": [
-												"user"
-											],
-											"query": [
-												{
-													"key": "sessionId",
-													"value": ""
-												}
-											]
-										},
-										"description": "This request lets users update details on their profiles."
-									},
-									"status": "Resource not found",
-									"code": 404,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
@@ -3271,7 +3238,7 @@
 											}
 										},
 										"url": {
-											"raw": "{{url}}/user?sessionId=",
+											"raw": "{{url}}/user?sessionId=12w313",
 											"host": [
 												"{{url}}"
 											],
@@ -3281,7 +3248,7 @@
 											"query": [
 												{
 													"key": "sessionId",
-													"value": ""
+													"value": "12w313"
 												}
 											]
 										},
