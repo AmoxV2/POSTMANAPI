@@ -759,28 +759,24 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/notes/:id?sessionId=",
+									"raw": "{{base_url}}/notes?sessionId=1000&id=1",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
-										"notes",
-										":id"
+										"notes"
 									],
 									"query": [
 										{
 											"key": "sessionId",
-											"value": ""
-										}
-									],
-									"variable": [
+											"value": "1000"
+										},
 										{
 											"key": "id",
-											"value": null
+											"value": "1"
 										}
 									]
-								},
-								"description": "Retrieve the details of a specific note by providing the note ID."
+								}
 							},
 							"status": "OK",
 							"code": 200,
@@ -804,28 +800,24 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/notes/:id?sessionId=",
+									"raw": "{{base_url}}/notes?sessionId=1000&id=1",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
-										"notes",
-										":id"
+										"notes"
 									],
 									"query": [
 										{
 											"key": "sessionId",
-											"value": ""
-										}
-									],
-									"variable": [
+											"value": "1000"
+										},
 										{
 											"key": "id",
-											"value": null
+											"value": "1"
 										}
 									]
-								},
-								"description": "Retrieve the details of a specific note by providing the note ID."
+								}
 							},
 							"status": "Reguest error",
 							"code": 400,
@@ -849,28 +841,24 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/notes/:id?sessionId=",
+									"raw": "{{base_url}}/notes?sessionId=1000&id=1",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
-										"notes",
-										":id"
+										"notes"
 									],
 									"query": [
 										{
 											"key": "sessionId",
-											"value": ""
-										}
-									],
-									"variable": [
+											"value": "1000"
+										},
 										{
 											"key": "id",
-											"value": null
+											"value": "1"
 										}
 									]
-								},
-								"description": "Retrieve the details of a specific note by providing the note ID."
+								}
 							},
 							"status": "Access unauthorized",
 							"code": 401,
@@ -894,28 +882,24 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/notes/:id?sessionId=",
+									"raw": "{{base_url}}/notes?sessionId=1000&id=1",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
-										"notes",
-										":id"
+										"notes"
 									],
 									"query": [
 										{
 											"key": "sessionId",
-											"value": ""
-										}
-									],
-									"variable": [
+											"value": "1000"
+										},
 										{
 											"key": "id",
-											"value": null
+											"value": "1"
 										}
 									]
-								},
-								"description": "Retrieve the details of a specific note by providing the note ID."
+								}
 							},
 							"status": "Acces forbidden",
 							"code": 400,
@@ -939,24 +923,21 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/notes/:id?sessionId=",
+									"raw": "{{base_url}}/notes?sessionId=1000&id=1",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
-										"notes",
-										":id"
+										"notes"
 									],
 									"query": [
 										{
 											"key": "sessionId",
-											"value": ""
-										}
-									],
-									"variable": [
+											"value": "1000"
+										},
 										{
 											"key": "id",
-											"value": null
+											"value": "1"
 										}
 									]
 								},
@@ -984,28 +965,24 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/notes/:id?sessionId=",
+									"raw": "{{base_url}}/notes?sessionId=1000&id=1",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
-										"notes",
-										":id"
+										"notes"
 									],
 									"query": [
 										{
 											"key": "sessionId",
-											"value": ""
-										}
-									],
-									"variable": [
+											"value": "1000"
+										},
 										{
 											"key": "id",
-											"value": null
+											"value": "1"
 										}
 									]
-								},
-								"description": "Retrieve the details of a specific note by providing the note ID."
+								}
 							},
 							"status": "internal server error",
 							"code": 500,
@@ -1035,7 +1012,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"text\": \"updated opinion\",\n    \"starRating\": 3\n}",
+							"raw": "{\n    \"id\": 1,\n    \"text\": \"sdasdad\",\n    \"starRating\": 321\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1043,24 +1020,17 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/notes/:id?sessionId=111-222-333-444",
+							"raw": "{{base_url}}/notes?sessionId=111-222-333-444",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
-								"notes",
-								":id"
+								"notes"
 							],
 							"query": [
 								{
 									"key": "sessionId",
 									"value": "111-222-333-444"
-								}
-							],
-							"variable": [
-								{
-									"key": "id",
-									"value": null
 								}
 							]
 						},
@@ -1075,7 +1045,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"text\": \"updated opinion\",\n    \"starRating\": 3\n}",
+									"raw": "{\n    \"id\": 1,\n    \"text\": \"updated opinion\",\n    \"starRating\": 3\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1083,24 +1053,17 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/notes/:id?sessionId=111-222-333-444",
+									"raw": "{{base_url}}/notes?sessionId=111-222-333-444",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
-										"notes",
-										":id"
+										"notes"
 									],
 									"query": [
 										{
 											"key": "sessionId",
 											"value": "111-222-333-444"
-										}
-									],
-									"variable": [
-										{
-											"key": "id",
-											"value": null
 										}
 									]
 								},
@@ -1137,24 +1100,17 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/notes/:id?sessionId=111-222-333-444",
+									"raw": "{{base_url}}/notes?sessionId=111-222-333-444",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
-										"notes",
-										":id"
+										"notes"
 									],
 									"query": [
 										{
 											"key": "sessionId",
 											"value": "111-222-333-444"
-										}
-									],
-									"variable": [
-										{
-											"key": "id",
-											"value": null
 										}
 									]
 								},
@@ -1183,7 +1139,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"text\": \"updated opinion\",\n    \"starRating\": 3\n}",
+									"raw": "{\n    \"id\": 1,\n    \"text\": \"updated opinion\",\n    \"starRating\": 3\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1191,24 +1147,17 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/notes/:id?sessionId=111-222-333-444",
+									"raw": "{{base_url}}/notes?sessionId=111-222-333-444",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
-										"notes",
-										":id"
+										"notes"
 									],
 									"query": [
 										{
 											"key": "sessionId",
 											"value": "111-222-333-444"
-										}
-									],
-									"variable": [
-										{
-											"key": "id",
-											"value": null
 										}
 									]
 								},
@@ -1237,7 +1186,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"text\": \"updated opinion\",\n    \"starRating\": 3\n}",
+									"raw": "{  \n    \"id\": 1,\n    \"text\": \"updated opinion\",\n    \"starRating\": 3\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1245,24 +1194,17 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/notes/:id?sessionId=111-222-333-444",
+									"raw": "{{base_url}}/notes?sessionId=111-222-333-444",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
-										"notes",
-										":id"
+										"notes"
 									],
 									"query": [
 										{
 											"key": "sessionId",
 											"value": "111-222-333-444"
-										}
-									],
-									"variable": [
-										{
-											"key": "id",
-											"value": null
 										}
 									]
 								},
@@ -1291,7 +1233,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"text\": \"updated opinion\",\n    \"starRating\": 3\n}",
+									"raw": "{\n    \"text\": \"updated opinion\",\n    \"starRating\": 3,\n    \"id\": 1\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1299,28 +1241,26 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/notes/:id?sessionId=111-222-333-444",
+									"raw": "{{base_url}}/notes?sessionId=111-222-333-444",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
-										"notes",
-										":id"
+										"notes"
 									],
 									"query": [
 										{
 											"key": "sessionId",
 											"value": "111-222-333-444"
-										}
-									],
-									"variable": [
+										},
 										{
-											"key": "id",
-											"value": null
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
 										}
 									]
-								},
-								"description": "Update the details of a specific note identified by its note ID."
+								}
 							},
 							"status": "Resource not found",
 							"code": 404,
@@ -1345,7 +1285,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"text\": \"updated opinion\",\n    \"starRating\": 3\n}",
+									"raw": "{\n    \"id\": 1,\n    \"text\": \"updated opinion\",\n    \"starRating\": 3\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1353,24 +1293,17 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/notes/:id?sessionId=111-222-333-444",
+									"raw": "{{base_url}}/notes?sessionId=111-222-333-444",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
-										"notes",
-										":id"
+										"notes"
 									],
 									"query": [
 										{
 											"key": "sessionId",
 											"value": "111-222-333-444"
-										}
-									],
-									"variable": [
-										{
-											"key": "id",
-											"value": null
 										}
 									]
 								},
@@ -1434,21 +1367,18 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/notes/:id?sessionId=111-222-333-444",
+									"raw": "{{base_url}}/notes?sessionId=1000&id=1",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
-										"notes",
-										":id"
+										"notes"
 									],
 									"query": [
 										{
 											"key": "sessionId",
-											"value": "111-222-333-444"
-										}
-									],
-									"variable": [
+											"value": "1000"
+										},
 										{
 											"key": "id",
 											"value": "1"
@@ -1471,23 +1401,20 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/notes/:id?sessionId=111-222-333-444",
+									"raw": "{{base_url}}/notes?sessionId=1000&idsad=1",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
-										"notes",
-										":id"
+										"notes"
 									],
 									"query": [
 										{
 											"key": "sessionId",
-											"value": "111-222-333-444"
-										}
-									],
-									"variable": [
+											"value": "1000"
+										},
 										{
-											"key": "id",
+											"key": "idsad",
 											"value": "1"
 										}
 									]
@@ -1516,21 +1443,18 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/notes/:id?sessionId=111-222-333-444",
+									"raw": "{{base_url}}/notes?sessionId=1000&id=1",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
-										"notes",
-										":id"
+										"notes"
 									],
 									"query": [
 										{
 											"key": "sessionId",
-											"value": "111-222-333-444"
-										}
-									],
-									"variable": [
+											"value": "1000"
+										},
 										{
 											"key": "id",
 											"value": "1"
@@ -1561,21 +1485,18 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/notes/:id?sessionId=111-222-333-444",
+									"raw": "{{base_url}}/notes?sessionId=1000&id=1",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
-										"notes",
-										":id"
+										"notes"
 									],
 									"query": [
 										{
 											"key": "sessionId",
-											"value": "111-222-333-444"
-										}
-									],
-									"variable": [
+											"value": "1000"
+										},
 										{
 											"key": "id",
 											"value": "1"
@@ -1606,21 +1527,18 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/notes/:id?sessionId=111-222-333-444",
+									"raw": "{{base_url}}/notes?sessionId=1000&id=1",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
-										"notes",
-										":id"
+										"notes"
 									],
 									"query": [
 										{
 											"key": "sessionId",
-											"value": "111-222-333-444"
-										}
-									],
-									"variable": [
+											"value": "1000"
+										},
 										{
 											"key": "id",
 											"value": "1"
@@ -1651,21 +1569,18 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/notes/:id?sessionId=111-222-333-444",
+									"raw": "{{base_url}}/notes?sessionId=1000&id=1",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
-										"notes",
-										":id"
+										"notes"
 									],
 									"query": [
 										{
 											"key": "sessionId",
-											"value": "111-222-333-444"
-										}
-									],
-									"variable": [
+											"value": "1000"
+										},
 										{
 											"key": "id",
 											"value": "1"
